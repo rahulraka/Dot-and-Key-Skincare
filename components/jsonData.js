@@ -1639,5 +1639,5 @@ function dataRetrieve(){
       
       localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
 }
-
+console.log("hi")
 export default dataRetrieve;
