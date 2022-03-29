@@ -3,8 +3,7 @@ function dataRetrieve(){
         {
           title: "Age Defense Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_6_64417757-8381-4611-a86f-1a2f9dea2cf0_360x.jpg?v=1638340686",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-3_3_540x.jpg?v=1638340686",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-8_360x.jpg?v=1646475626",
           ],
           size: ["Complete Kit"],
           description: [
@@ -32,9 +31,7 @@ function dataRetrieve(){
         {
             title: "DETAN + GLOW GREEN TEA CLAY MASK",
             images: [
-              "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_060b3622-04da-4875-b7a2-7a13a99db654_360x.jpg?v=1638974886",
-              "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-Rose_360x.jpg?v=1638974886",
-              "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Other-product-packaging-box-4HandCream_360x.jpg?v=1638974886",
+              "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_2_78dd953a-9e91-4c53-8127-68f733ff8f8c_360x.jpg?v=1646474987",
             ],
             size: ["85g"],
             description: [
@@ -64,13 +61,7 @@ function dataRetrieve(){
         {
           title: "GLOW REVEALING VITAMIN C SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-9_1800x1800.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VitaminCSerumListing_1800x1800.png?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_2_1800x1800.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit-c-packaging-box-2_1800x1800.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VITAMINCSERUMCONCENTRATE_1_1800x1800.png?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard_2_2_1800x1800.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Vitamin-C-serum-listing-image_1800x1800.png?v=1639053758",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_2_360x.jpg?v=1646475136",
           ],
           size: ["30ml", "Fragrance Free 30 ml"],
           description: [
@@ -103,9 +94,7 @@ function dataRetrieve(){
           title: "VITAMIN C GLOW PINK CLAY MASK",
           images: [
             
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/25032021_Dot_Key-0226copy_1800x1800.jpg?v=1638990146",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pinkclayhuman_18ed2ff0-8d46-4a89-b300-258bf13c32c5_1800x1800.png?v=1638990146",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit-c-packaging-box-3_1800x1800.jpg?v=1638990146",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-12_360x.jpg?v=1646474736",
           ],
           size: ["85g"],
           description: [
@@ -135,12 +124,7 @@ function dataRetrieve(){
         {
           title: "NIGHT RESET RETINOL CREAM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-12_360x.jpg?v=1638975011",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/D_K_Night_Reset_Bottle_final_CapChanged2_360x.jpg?v=1638975011",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Other-product-packaging-box-5_360x.jpg?v=1638975011",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/nightresetcream_360x.jpg?v=1638975011",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard_1_1_360x.jpg?v=1638975011",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-5_360x.jpg?v=1638975011",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_360x.png?v=1646973657",
           ],
           size: ["60ml", "25ml"],
           description: [
@@ -169,11 +153,7 @@ function dataRetrieve(){
         {
           title: "VITAMIN C GLOW CAPSULE SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_0dce0223-6653-4f82-a8b7-8699db6b322c_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/listing1_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/listing2_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/glowbooster-combo-2_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/10_360x.png?v=1639053648",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-18_360x.jpg?v=1644916747",
           ],
           size: ["30ml"],
           description: [
@@ -204,8 +184,7 @@ function dataRetrieve(){
         {
           title: "Peace Out Acne Duo",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7.2_5c7a4a7f-5b10-4337-890f-883175f02832_360x.jpg?v=1639047630",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7a_360x.jpg?v=1639047630",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CLEANSER_360x.png?v=1646547021",
           ],
           size: ["25ml"],
           description: [
@@ -235,14 +214,7 @@ function dataRetrieve(){
         {
           title: "Glow Elixir Radiance Enhancing Face Oil",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-8_cb17445d-9a2e-4c03-8bff-2cf75a1b4057_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_2_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_2_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_2_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_2_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_2_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_1_1800x1800.jpg?v=1638975258",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2_1800x1800.jpg?v=1638975258",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Green-Clay-Listing_1_360x.jpg?v=1648088706",
           ],
           size: ["20ml"],
           description: [
@@ -272,11 +244,7 @@ function dataRetrieve(){
         {
           title: "DEEP PORE FOAMING CLEANSER",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_81c93210-7768-4e0e-8618-e56c0d681c11_360x.jpg?v=1638973730",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MilkyFoamFacewash2_360x.jpg?v=1638973730",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/DEEPPORECLEANSER_360x.png?v=1638973730",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/cleanser30_360x.png?v=1638973730",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/MilkyFoamFacewash_540x.jpg?v=1638973730",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/lipf_360x.png?v=1646980857",
           ],
           size: ["120ml"],
           description: [
@@ -305,8 +273,7 @@ function dataRetrieve(){
         {
           title: "Spot Clearing Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/8_e870f095-bcdd-47c1-a0e6-9bf85ed15954_1800x1800.jpg?v=1639047691",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/8.a_1800x1800.jpg?v=1639047691",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_e9b6f30c-2046-4db7-b304-4999e2442d9c_360x.jpg?v=1646475887",
           ],
           size: ["120ml", "25ml", "15ml"],
           description: [
@@ -335,7 +302,7 @@ function dataRetrieve(){
         {
           title: "Acne Busting Kit - 15ml",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Pollution_Acne_1800x1800.jpg?v=1611576921",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_9a3af011-3356-4242-82df-c04322d27a6a_360x.jpg?v=1646475324",
           ],
           size: ["30ml"],
           description: [
@@ -368,8 +335,7 @@ function dataRetrieve(){
         {
           title: "Goodbye Acne Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/9_7dc2bc7e-3f69-4a0e-97c9-da1d7ec21645_360x.jpg?v=1639047740",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/9.a_360x.jpg?v=1639047738",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-10_360x.jpg?v=1646475087",
           ],
           size: ["30ml"],
           description: [
@@ -396,14 +362,7 @@ function dataRetrieve(){
         {
           title: "Watermelon SuperGlow Matte Moisturizer",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-10_360x.jpg?v=1638975148",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_4ae535bc-030a-4295-b889-6fca1c529fdb_360x.jpg?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_4_360x.jpg?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_5_360x.jpg?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_4_360x.jpg?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_4_360x.jpg?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/last_360x.png?v=1639052735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_14_360x.png?v=1639052735",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_3_4af2c161-611b-4168-b019-51183be44872_360x.jpg?v=1648088774",
           ],
           size: ["60ml"],
           description: [
@@ -432,10 +391,7 @@ function dataRetrieve(){
         {
           title: "TIME REVERSE RETINOL SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_7f8a5d35-b62a-4594-89eb-e2db57630d1b_1800x1800.jpg?v=1639053735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/TimeReverseRetinolSerum_1800x1800.jpg?v=1639053735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Age-defence-packaging-box-4_1800x1800.jpg?v=1639053735",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-4_1_1800x1800.jpg?v=1639053735",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HTONER_6028d509-a7a2-48e9-b91e-73958c8f7639_360x.png?v=1647236759",
           ],
           size: ["30ml"],
           description: [
@@ -463,10 +419,7 @@ function dataRetrieve(){
         {
           title: "10% NIACINAMIDE SPOT CORRECTOR SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-8_360x.jpg?v=1639053781",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Niacinamide-website-image_360x.jpg?v=1639053781",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Niacinamide_360x.jpg?v=1639053781",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/NiacinamideListing_360x.jpg?v=1639053781",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_3_4af2c161-611b-4168-b019-51183be44872_360x.jpg?v=1648088774",
           ],
           size: ["30ml"],
           description: [
@@ -493,9 +446,7 @@ function dataRetrieve(){
         {
           title: "5 Steps To Acne Free Skin",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/acne_360x.jpg?v=1638790100",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/acne2_360x.jpg?v=1638790105",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/acne3_1dc70644-ed43-49ef-b2ab-2dc04908da54_360x.jpg?v=1639028669",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HTONER_6028d509-a7a2-48e9-b91e-73958c8f7639_360x.png?v=1647236759",
           ],
           size: ["60ml"],
           description: [
@@ -527,10 +478,7 @@ function dataRetrieve(){
         {
           title: "AHA + BHA HYDRO PEEL GLOW POTION",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_4246ead0-0e74-4112-a65d-4e59b5f8a8b7_360x.jpg?v=1639053842",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/AHA-1_2_360x.jpg?v=1639053842",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/AHA-packaging-box-1_360x.jpg?v=1639053842",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/IMG_1810_360x.jpg?v=1639053842",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/TOBER_360x.png?v=1646547062",
           ],
           size: ["30ml"],
           description: [
@@ -560,10 +508,7 @@ function dataRetrieve(){
         {
           title: "HAND CREAM + SANITIZER, LAVENDER",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_9fee745b-bf6a-4b4a-b923-c7e800939621_360x.jpg?v=1638974908",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-L_360x.jpg?v=1638974908",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Other-product-packaging-box-3HandCream_360x.jpg?v=1638974908",
-            "",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14_360x.jpg?v=1646477249",
           ],
           size: ["50ml"],
           description: [
@@ -592,8 +537,7 @@ function dataRetrieve(){
         {
           title: "Mask Must Haves",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_50f381da-c383-4c66-bab9-494ef5c64166_360x.jpg?v=1639046641",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3a_1_360x.jpg?v=1639046641",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_86414d7e-8242-4895-bdf3-4a85fee6de1d_360x.jpg?v=1646475842",
           ],
           size: ["60ml"],
           description: [
@@ -622,8 +566,7 @@ function dataRetrieve(){
         {
           title: "ILLUMINATING GLOW FACIAL SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/IlluminatingGlowSerum_360x.jpg?v=1610018289",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/sunscreen-packaging-box-4_360x.jpg?v=1596018073",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_86414d7e-8242-4895-bdf3-4a85fee6de1d_360x.jpg?v=1646475842",
           ],
           size: ["50ml"],
           description: [
@@ -652,8 +595,7 @@ function dataRetrieve(){
         {
           title: "Best of Vitamin C Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-4_540x.jpg?v=1637220734",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-2_360x.jpg?v=1637220734",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-14_360x.jpg?v=1646477249",
           ],
           size: ["Complete Kit"],
           description: [
@@ -681,8 +623,7 @@ function dataRetrieve(){
         {
           title: "Best of Vitamin C Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-4_1800x1800.jpg?v=1637220734",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-2_1800x1800.jpg?v=1637220734",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BACK_360x.png?v=1646547142",
           ],
           size: [],
           description: [
@@ -709,11 +650,7 @@ function dataRetrieve(){
         {
           title: "ALPHA ARBUTIN RADIANCE SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_46f43881-b631-4408-a340-933fbe285aa7_1800x1800.jpg?v=1638974311",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ALPHAARTBUTIN_1800x1800.png?v=1638974311",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/alpha-arbutin-30ml_1800x1800.png?v=1638974311",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/29062021_Dot_Key-1861copy_1800x1800.jpg?v=1638974311",
-            "",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_2_2cd39b46-8ad5-42ca-9959-c09073c3861c_360x.jpg?v=1646476727",
           ],
           size: ["30ml"],
           description: [
@@ -743,13 +680,7 @@ function dataRetrieve(){
         {
           title: "Watermelon SuperGlow Facial Gel Cleanser",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_13_360x.png?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_2d54e64d-48b2-4d4b-b79b-3688bf33e450_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_2_360x.png?v=1637214642",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_2_2cd39b46-8ad5-42ca-9959-c09073c3861c_360x.jpg?v=1646476727",
           ],
           size: ["120ml"],
           description: [
@@ -778,11 +709,7 @@ function dataRetrieve(){
         {
           title: "VITAMIN C GLOW CAPSULE SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_0dce0223-6653-4f82-a8b7-8699db6b322c_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/listing1_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/listing2_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/glowbooster-combo-2_360x.jpg?v=1639053648",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/10_540x.png?v=1639053648",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_3_7231ae56-0a07-472c-92c1-7d34bc93cf57_360x.jpg?v=1648088737",
           ],
           size: ["30ml"],
           description: [
@@ -811,8 +738,7 @@ function dataRetrieve(){
         {
           title: "SKIN AWAKENING MOISTURIZING SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/SkinAwakening_360x.jpg?v=1610017602",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Mint-packaging-box-2SkinAwakeningSerum_360x.jpg?v=1610017602",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_3_b3ab1122-8da2-441d-9718-9b27e26190b6_360x.jpg?v=1648088604",
           ],
           size: ["50ml", "Fragrance Free 50 ml"],
           description: [
@@ -841,8 +767,7 @@ function dataRetrieve(){
         {
           title: "Age Defense Skincare Regime",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_6_64417757-8381-4611-a86f-1a2f9dea2cf0_1800x1800.jpg?v=1638340686",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-3_3_1800x1800.jpg?v=1638340686",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_2_ff47654b-ba0b-43c5-ac01-7888e451d4e7_360x.jpg?v=1646476750",
           ],
           size: ["120ml", "25ml", "15ml"],
           description: [
@@ -871,12 +796,7 @@ function dataRetrieve(){
         {
           title: "WATERMELON SUPERGLOW FACIAL GEL CLEANSER",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_13_360x.png?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_360x.jpg?v=1637214642",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_2_360x.png?v=1637214642",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_4_7a306ce8-6ac4-4704-9284-aa5264e20546_360x.jpg?v=1646476826",
           ],
           size: ["120ml"],
           description: [
@@ -906,11 +826,7 @@ function dataRetrieve(){
           title: "CHOCOLATE GLOW MOUSSE FACE MASK",
           images: [
            
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image-4_1800x1800.png?v=1638990062",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/website-1080-X-1080_1800x1800.jpg?v=1638990062",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/chocolatemasktexture_1800x1800.jpg?v=1638990062",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/product-usp-2_1800x1800.jpg?v=1638990062",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/chocolate_Mask_1800x1800_4015046f-2199-4fad-9cd8-80dabe004d0d_1800x1800.jpg?v=1638990062",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-6_3_360x.jpg?v=1646477545",
           ],
           size: ["60ml"],
           description: [
@@ -939,14 +855,7 @@ function dataRetrieve(){
         {
           title: "VITAMIN C + E SUPER BRIGHT MOISTURIZER",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard4_1_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard5_1_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard7_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard3_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard6_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_2_360x.jpg?v=1638975201",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_360x.png?v=1644862753",
           ],
           size: ["60ml"],
           description: [
@@ -976,9 +885,7 @@ function dataRetrieve(){
           title: "CHARCOAL MOUSSE CLAY MASK",
           images: [
             
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/acne-packaging-box-1_1800x1800.jpg?v=1638990039",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Product-texture-6_1800x1800.jpg?v=1638990039",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/charcoal-clay-mask_1800x1800.png?v=1638990039",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_360x.png?v=1644862753",
           ],
           size: ["85g"],
           description: [
@@ -1008,9 +915,7 @@ function dataRetrieve(){
         {
           title: "HAND CREAM + SANITIZER, ROSE",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_060b3622-04da-4875-b7a2-7a13a99db654_360x.jpg?v=1638974886",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-Rose_360x.jpg?v=1638974886",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Other-product-packaging-box-4HandCream_360x.jpg?v=1638974886",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-6_360x.jpg?v=1648088650",
           ],
           size: ["50ml"],
           description: [
@@ -1039,14 +944,7 @@ function dataRetrieve(){
         {
           title: "CICA CALMING SKIN RENEWING NIGHT GEL",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_14c0fef2-c164-47a4-b19a-f53e52ca44dc_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/cica3_1_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BACKEDBY_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/whatdoesitdo_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BESTSUITEDOFR_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CicaNightGel_Box_3D_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CicaNightGel_Box_3D_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_2_360x.png?v=1638973757",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-6_360x.jpg?v=1648088650",
           ],
           size: ["60ml"],
           description: [
@@ -1076,15 +974,7 @@ function dataRetrieve(){
         {
           title: "VITAMIN C + E SUPER BRIGHT MOISTURIZER",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-11_540x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard4_1_540x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard5_1_540x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard7_540x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard3_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard6_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/55f28620586e40cd991b76baca56c458.thumbnail.0000000_360x.jpg?v=1631884597",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2_360x.jpg?v=1638975201",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_2_360x.jpg?v=1638975201",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-3_4_360x.jpg?v=1643394541",
           ],
           size: ["60ml"],
           description: [
@@ -1112,11 +1002,7 @@ function dataRetrieve(){
         {
           title: "CICA CALMING SKIN RENEWING NIGHT GEL",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_14c0fef2-c164-47a4-b19a-f53e52ca44dc_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/cica3_1_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BACKEDBY_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/selfassessment_360x.jpg?v=1638973757",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BESTSUITEDOFR_360x.jpg?v=1638973757",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_2_360x.jpg?v=1646476789",
           ],
           size: ["85mg"],
           description: [
@@ -1144,8 +1030,7 @@ function dataRetrieve(){
         {
           title: "Mask Must Haves",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_50f381da-c383-4c66-bab9-494ef5c64166_360x.jpg?v=1639046641",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3a_1_360x.jpg?v=1639046641",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-8_2_360x.jpg?v=1646477599",
           ],
           size: ["30ml"],
           description: [
@@ -1174,9 +1059,7 @@ function dataRetrieve(){
         {
           title: "FOOT CREAM + DEODORIZER, MINT",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_ee6eb3c9-5a6f-42bb-85e8-d88198d7e3e5_360x.jpg?v=1638974857",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/FootCream-Lav_Pep_360x.jpg?v=1638974857",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Other-product-packaging-box-1FootCream_360x.jpg?v=1638974857",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-17_360x.jpg?v=1646477731",
           ],
           size: ["50ml"],
           description: [
@@ -1205,11 +1088,7 @@ function dataRetrieve(){
         {
           title: "Superfood Skin Nourishing Face Oil",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_1800x1800.jpg?v=1638975041",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_1_1800x1800.jpg?v=1638975041",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_1_1800x1800.jpg?v=1638975041",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_1800x1800.jpg?v=1638975041",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_1800x1800.jpg?v=1638975041",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_3_a77517b0-16db-48ba-8868-7ed7601dc364_360x.jpg?v=1648088728",
           ],
           size: ["20ml"],
           description: [
@@ -1240,9 +1119,7 @@ function dataRetrieve(){
         {
           title: "UNDERARM DETOX CHARCOAL MASK",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/underarmdetoxcharcoalmask_92ab1477-4bc4-4bff-bfc6-272eabd02709_1800x1800.png?v=1627881120",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/D_K_100ml_Underarm_Detox_bottle_final_CapChanged2_1800x1800.jpg?v=1628233132",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pigmentation-packaging-box-2_1800x1800.jpg?v=1628233134",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_4_85b8fcfc-89a1-49d0-bc95-e4d49dfd6619_360x.jpg?v=1646934817",
           ],
           size: ["100g"],
           description: [
@@ -1272,10 +1149,7 @@ function dataRetrieve(){
         {
           title: "5-in-1 VITAMIN C GLOW KIT",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_da5bf010-d398-458f-93c7-1a87b5687b44_360x.jpg?v=1638973784",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Combo-images6_360x.png?v=1638973784",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Combo-images5_1800x1800_3d220300-30e9-49cf-928a-cc9c06a32067_360x.png?v=1638973784",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/SKINTRAVELKIT_1800x1800_f1da35c7-7326-4e86-bbe7-c66f04014023_540x.png?v=1638973784",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard2-7_360x.jpg?v=1648088622",
           ],
           size: ["Complete Kit"],
           description: [
@@ -1303,13 +1177,7 @@ function dataRetrieve(){
         {
           title: "GLOW REVEALING VITAMIN C SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-9_540x.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VitaminCSerumListing_360x.png?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_2_360x.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vit-c-packaging-box-2_540x.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VITAMINCSERUMCONCENTRATE_1_540x.png?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard_2_2_540x.jpg?v=1639053758",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Vitamin-C-serum-listing-image_540x.png?v=1639053758",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-9_1_360x.jpg?v=1646477634",
           ],
           size: ["30ml", "Fragrance Free 30 ml"],
           description: [
@@ -1339,8 +1207,7 @@ function dataRetrieve(){
         {
           title: "Hand & Foot Dream Cream Duo",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/foot_a9de1f88-5f08-47a8-aa96-1ec9e3d16cc5_360x.jpg?v=1639028789",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/foot1_360x.jpg?v=1639028789",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_4_360x.jpg?v=1646934795",
           ],
           size: ["30ml"],
           description: [
@@ -1373,8 +1240,7 @@ function dataRetrieve(){
         {
           title: "ILLUMINATING GLOW FACIAL SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/IlluminatingGlowSerum_360x.jpg?v=1610018289",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/sunscreen-packaging-box-4_360x.jpg?v=1596018073",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_7_360x.jpg?v=1646478322",
           ],
           size: ["50ml"],
           description: [
@@ -1404,8 +1270,7 @@ function dataRetrieve(){
         {
           title: "Acne Aftercare Trio",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_849b37f6-0cda-4f89-96bf-85e083ce9798_1800x1800.jpg?v=1639047221",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6a_1800x1800.jpg?v=1639047221",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/sleepingpeelingcombo2_360x.png?v=1610622018",
           ],
           size: ["120ml", "85GM", "15ml"],
           description: [
@@ -1436,10 +1301,7 @@ function dataRetrieve(){
           title: "ENERGIZING BUBBLE CLAY MASK",
           images: [
            
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Mint-packaging-box-1_1800x1800.jpg?v=1638990117",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Product-texture-5_1800x1800.jpg?v=1638990117",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/bubbleclay_1800x1800.jpg?v=1638990117",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/BubbleClayMask_1800x1800.jpg?v=1638990117",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_1_360x.jpg?v=1646476426",
           ],
           size: [],
           description: [
@@ -1469,12 +1331,7 @@ function dataRetrieve(){
         {
           title: "72 HR HYDRATING GEL + PROBIOTICS",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_45e1c392-6fa9-4fd9-b0db-075eb6676ac4_360x.jpg?v=1638973814",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image-5_360x.png?v=1638973814",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/probioticclaims_1_360x.jpg?v=1638973814",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/probiotics-2_360x.jpg?v=1638973814",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/29062021_Dot_Key-1845_copy_360x.jpg?v=1638973814",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image-2_540x.png?v=1638973814",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_3_663ef15f-3847-4e70-a9f8-3a9dd335bb72_360x.jpg?v=1648088753",
           ],
           size: ["60ml", "25ml"],
           description: [
@@ -1506,9 +1363,7 @@ function dataRetrieve(){
           title: "ACNE DEFENSE GREEN CLAY MASK",
           images: [
            
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image-1_1800x1800.png?v=1638990018",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/green_2_1800x1800.png?v=1638990018",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/GreenClayMask_1800x1800.png?v=1638990018",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_5_39f4086f-bcee-4a2f-8d06-e9d0916d2d2d_360x.jpg?v=1648088614",
           ],
           size: ["85g"],
           description: [
@@ -1538,10 +1393,7 @@ function dataRetrieve(){
         {
           title: "PHA + BAKUCHIOL DAILY PEEL RESURFACING MILK SERUM",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_097fa241-fe44-4353-8236-56f066ce11f6_1800x1800.jpg?v=1639053810",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/box_1800x1800.jpg?v=1639053810",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/howtouse_1800x1800.jpg?v=1639053810",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/product_1800x1800.jpg?v=1639053810",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_5_360x.jpg?v=1645089859",
           ],
           size: ["30ml"],
           description: [
@@ -1570,10 +1422,7 @@ function dataRetrieve(){
         {
           title: "GLOW ACCELERATOR 30% AHA + 2% BHA",
           images: [
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_63b027ba-14ea-402d-a17f-19c71da25dfc_360x.jpg?v=1639053615",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/GlowAccelerator_360x.jpg?v=1639053615",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/glowacceleratorcleansingsolution_360x.png?v=1639053615",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/IMG_4883_360x.jpg?v=1639053615",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_6107c6a9-77b5-45c1-b841-8f2d4a82aaf9_360x.jpg?v=1645767431",
           ],
           size: ["20ml"],
           description: [
@@ -1603,12 +1452,7 @@ function dataRetrieve(){
           title: "DAMASK ROSE RESURFACING GEL MASK",
           images: [
             
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_7_360x.png?v=1638989872",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_9_360x.png?v=1638989872",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_9_360x.png?v=1638989872",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5_7_360x.png?v=1638989872",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6_4_360x.png?v=1638989872",
-            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_360x.png?v=1638989872",
+            "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4_0805e21b-6e8f-4afb-8efb-4736d3995fc3_360x.jpg?v=1646054218",
           ],
           size: ["25ml"],
           description: [
@@ -1637,7 +1481,7 @@ function dataRetrieve(){
         },
       ];
       
-      localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
+      localStorage.setItem("dotAndKeyProducts", JSON.stringify(data));
 }
 
 export default dataRetrieve;
