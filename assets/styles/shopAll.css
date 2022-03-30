@@ -2,13 +2,26 @@ body {
   padding: 0;
   margin: 0;
   /* box-sizing: border-box; */
+  font-family: "Roboto";
+
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474747;
+  border-radius: 10px;
 }
 #shopAllHead {
   text-align: center;
   font-size: 45px;
   margin: 30px 0px 0 0;
   color: #3c3c3c;
-  font-family: "Roboto";
 
 }
 
@@ -17,7 +30,7 @@ body {
 #sliderBanner {
   width: 100%;
   height: 475px;
-  /* position: relative; */
+  position: relative;
   margin: auto;
 }
 .prev,
@@ -68,30 +81,33 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   gap: 30px;
 }
 
-.card {
-  border: 1px solid black;
+.main {
+  /* border: 1px solid black; */
   height: 420px;
+  position: relative;
   /* display: flex; */
 }
-.card:hover {
+.main:hover {
   cursor: pointer;
 }
-.card img {
+.main img {
   width: 100%;
 }
 .description {
   padding: 0px 10px;
 }
-.description .rating {
+.rating {
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 500;
+  display: flex;
+  justify-content: space-between;
 }
-.description .title {
+.title {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
@@ -99,24 +115,23 @@ body {
   letter-spacing: 1px;
   line-height: 1.3;
 }
-.description .price {
+.price {
   line-height: 0.2;
   text-align: center;
   font-size: 12px;
   font-weight: 800;
 }
-.description .price .original-price {
+.price .original-price {
   text-decoration: line-through;
   color: rgb(177, 177, 177);
 }
-.description .price .sale-price {
+.price .sale-price {
   margin-left: 10px;
   color: #ff6781;
 }
 
 .discount {
-  position: absolute
-  ;
+  position: absolute;
   top: 0;
   right: 0;
   background-color: #919191;
@@ -127,18 +142,20 @@ body {
   font-weight: lighter;
 }
 
-#cartBtn{
+.cartBtn{
+  position: absolute;
+  cursor: pointer;
   width: 100%;
   height: 30px;
   background-color: #ff6781;
   color: white;
   border: none;
-  position: relative;
+  /* position: relative; */
   bottom: 0;
   outline: none;
 }
-#cartBtn :hover {
-  background-color: #ff4665;
+.cartBtn:hover {
+  background-color: black;
 }
 
 .filter-bar {
@@ -152,13 +169,13 @@ body {
   display: flex;
   justify-content: space-between;
   /* border: 1px solid black; */
-  width: 40%;
+  width: 35%;
   margin: auto;
 }
 .filter-bar select {
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
   font-size: 20px;
   height: 50px;
-  width: 48%;
+  width: 43%;
 }

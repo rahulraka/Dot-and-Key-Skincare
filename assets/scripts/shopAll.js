@@ -39,52 +39,9 @@ function showSlides(n) {
 
 // content starrts here
 
-const appendAll = (productsContainer, data) => {
-  // data.map((el)=>{
-  // let main=document.createElement("div");
-  // main.setAttribute("id","main");
-
-  // let imgDiv=document.createElement("div");
-  // imgDiv.setAttribute("id","imgDiv")
-  // let productImg= document.createElement("img");
-  // productImg.setAttribute("id","productImg");
-  // let allDiv = document.createElement("div");
-  // allDiv.setAttribute("id","allDiv")
-
-  // let starDiv= document.createElement("div");
-  // starDiv.setAttribute("id","starDiv")
-
-  // let titleDiv = document.createElement("div");
-  // titleDiv.setAttribute("id","title");
-
-  // let productTitle = document.createElement("p")
-  // productTitle.setAttribute("id","productTitle");
-
-  // let priceDiv=document.createElement("div");
-  // priceDiv.setAttribute("id","priceDiv");
-
-  // let price = document.createElement("p");
-  // price.setAttribute("id","price");
-
-  // let cartDiv = document.createElement("div");
-  // cartDiv.setAttribute("id","cartDiv");
-
-  // let cartBtn=document.createElement("button");
-  // cartBtn.setAttribute("id","cartBtn");
-  // cartBtn.innerText="ADD TO Cart";
-
-  // allDiv.append(starDiv,titleDiv,priceDiv);
-  // titleDiv.append(productTitle);
-  // priceDiv.append(price);
-  // parent.append(imgDiv,allDiv,titleDiv,cartDiv);
-
-  productsContainer.innerHTML = "";
-  if (data.length == 0 || data == undefined || data == null) {
-    productsContainer.innerHTML = `<hr><h2>NO Product Found for this search !!!</h2><hr>`;
-    productsContainer.style.display = "block";
-    productsContainer.style.marginBottom = "100px";
-    productsContainer.style.textAlign = "center";
-  } else {
+const appendAll = (parent, data) => {
+   parent.innerHTML = "";
+  
     // changing the stars according to rating
     data.forEach((item) => {
       var rating = "";
@@ -117,7 +74,6 @@ const appendAll = (productsContainer, data) => {
                     <span class="iconify" data-icon="openmoji:star"></span> 
                     <span class="iconify" data-icon="openmoji:star"></span> `;
 
-      // calculating sale price on the basis of Orignal price
       var x = Math.floor((item.discount / 100) * item.price).toFixed(2);
       x = (item.price - x).toFixed(2);
       var originalPrice;
@@ -128,27 +84,153 @@ const appendAll = (productsContainer, data) => {
         originalPrice = "";
         var disc = "";
       }
-      // Appending all the product cards on the main div
-      productsContainer.innerHTML += `
-            <div class="card">
-           <div onclick="redirectToIndividualProductPage('${item.id}')"> 
+      parent.innerHTML += `
+            <div class="main">
+           <div onclick="redirect('${item.id}')"> 
             <img src="${item.images[0]}">
             <div class="description">
-                <label class="rating">${rating} ${item.rating}/5</label>
+                <div class="rating">
+                <div>
+                ${rating} ${item.rating}/5 
+                </div>
+                
+                
+                <i class="fa-regular fa-heart fa-2x" onclick="paintHeart()"></i></div>
                 <p class="title">${item.title}</p>
                 <p class="price"><span class="original-price">${originalPrice}</span><span class="sale-price">Rs: ${x}</span></p>
             </div>
             <div class="discount">${disc}</div>
            </div>
-           <button id="cartBtn">Add to Cart</button>
+           <button class="cartBtn" onclick="addToCart('${item.id}')">Add to Cart</button>
         </div>
            `;
     });
   }
-};
+;
+function redirect(){
+  console.log('redirect')
+}
+function addToCart(){
+  console.log("added")
+}
+function paintHeart(){
+  console.log("heart")
+    document.querySelector(".fa-regular").style.font.weight = "bold";
+}
 let productData = JSON.parse(localStorage.getItem("dotAndKeyProducts"));
 console.log(productData);
 let parent = document.querySelector("#productsContent");
 appendAll(parent, productData);
 
-// onclick="addToCart('${item.id}')"
+
+// sort and filter js starts healer
+
+var categoryFilter = document.getElementById("category-filter");
+categoryFilter.addEventListener("change", ()=>{
+    filter(categoryFilter.value,productData)
+});
+var sorting = document.getElementById("sorting-filter")
+    sorting.addEventListener("change", () =>{
+        sortingFilter(sorting.value,productData);
+    });
+
+var filteredData = productData;
+    // Filter function will work according to passed product category
+    function filter(e,data)
+    {
+
+        var category = e;
+        filteredData = data;
+        console.log(category)
+        if(category == "default")
+        {
+            appendAll(parent,filteredData); 
+
+        }
+        else
+        {
+                var temp = [];
+                filteredData.forEach(item => {
+                if(item.category == category){
+                    temp.push(item);
+                }
+                })  
+                filteredData = temp;
+                console.log(filteredData)
+                
+                appendAll(parent,filteredData);
+                var sortingTitle = sorting.value;
+                 sortingFilter(sortingTitle,filteredData)
+        }      
+    }
+    // Sorting Filter 
+    function sortingFilter(e,data)
+    {
+        var sortingTitle = e;
+        if(sortingTitle == "default")
+        {
+            filteredData = data;
+            appendAll(parent,filteredData); 
+        }
+        else
+        {
+            // sort by price low to high
+                if(sorting.value == "price-low-high")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return Math.floor(a.price-(a.price*a.discount/100)) - Math.floor(b.price-(b.price*b.discount/100));
+                    });
+                appendAll(parent,filteredData);
+                }
+                
+            // sort by price high to low
+                else if(sorting.value == "price-high-low")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return Math.floor(b.price-(b.price*b.discount/100)) - Math.floor(a.price-(a.price*a.discount/100));
+                    });
+               appendAll(parent,filteredData);
+                }
+            // sort by rating low to high
+                else if(sorting.value == "rating-low-high")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return a.rating - b.rating; 
+                    });
+                    appendAll(parent,filteredData);
+                }
+                
+            // sort by price high to low
+                else if(sorting.value == "rating-high-low")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return b.rating - a.rating; 
+                    });
+                    appendAll(parent,filteredData);
+                }
+                
+            // sort by A-Z
+                else if(sorting.value == "A-Z")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return a.title.localeCompare(b.title);
+                    });
+                    appendAll(parent,filteredData);
+                }
+                // sort by Z-A
+                else if(sorting.value == "Z-A")
+                {
+                filteredData.sort(function (a,b)
+                     {
+                        return b.title.localeCompare(a.title);
+                    });
+                    appendAll(parent,filteredData);
+                }
+        }   
+    }
+
