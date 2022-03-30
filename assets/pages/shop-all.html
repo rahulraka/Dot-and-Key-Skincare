@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/shopAll.css" />
+    <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <!-- sliderBanner starts here.</> -->
+
+    <div id="sliderBanner">
+      <div class="mySlides fade">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/category-desk-Banner-Size---900px-X-1150px_9.gif?v=1648033052"
+          style="width: 1520px; height: 475px"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/category-desk-Banner-Size---900px-X-1150px_10.gif?v=1648126773"
+          style="width: 1520px; height: 475px"
+        />
+      </div>
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+
+    <!-- sliderBanner ends here.</> -->
+
+    <div><h5 id="shopAllHead">Shop All</h5></div>
+
+    <!-- products appending starts here -->
+
+    <div id="productsContent"></div>
+
+    <!-- filter and sort starts here -->
+
+    <div class="filter-bar">
+      <div>
+        <select id="category-filter">
+          <option value="default">Filter</option>
+          <option value="Acne">Acne Control</option>
+          <option value="Clay Masks">Clay Mask</option>
+          <option value="Dark Spots">Dark Spots</option>
+          <option value="Face Wash">Face Wash</option>
+          <option value="Moisturizer">Moisturizer</option>
+          <option value="Serum and Oil">Serum and Oil</option>
+          <option value="Skin Glow">Skin Glow</option>
+        </select>
+        <select id="sorting-filter">
+          <option value="default">Featured</option>
+          <option value="A-Z">Alphabetically, A-Z</option>
+          <option value="Z-A">Alphabetically, Z-A</option>
+          <option value="price-low-high">Price, low to high</option>
+          <option value="price-high-low">Price, high to low</option>
+          <option value="rating-low-high">Rating, low to high</option>
+          <option value="rating-high-low">Rating, high to low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- footer should be appended below to -->
+
+
+    <div id="footerSpace"></div>
+  </body>
+</html>
+<script src="../scripts/shopAll.js"></script>
+<script type="module">
+  import dataRetrieve from "/../components/jsonData.js";
+  dataRetrieve();
+</script>

@@ -1483,5 +1483,5 @@ function dataRetrieve(){
       
       localStorage.setItem("dotAndKeyProducts", JSON.stringify(data));
 }
-
+// console.log("hi")
 export default dataRetrieve;
