@@ -1,5 +1,5 @@
 
-    const  dataRetrieve = [
+    const  data = [
         {
           title: "Age Defense Skincare Regime",
           images: [
@@ -1638,7 +1638,7 @@
       ];
       localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
       
-}
+// }
 // localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
 
-export default dataRetrieve;
+// export default dataRetrieve;
