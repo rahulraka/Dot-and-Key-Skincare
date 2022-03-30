@@ -1,5 +1,5 @@
-function dataRetrieve(){
-    const data = [
+
+    const  dataRetrieve = [
         {
           title: "Age Defense Skincare Regime",
           images: [
@@ -752,7 +752,7 @@ function dataRetrieve(){
             "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/7_2_360x.png?v=1637214642",
           ],
           size: ["120ml"],
-          description: [
+          description: [ 
             "Treat your skin with a juicy burst of hydration in every wash with Watermelon SuperGlow Facial Gel Cleanser.",
             "A sulphate-free, juicy skin treat, the cleanser features a gel-like texture that's ideal for all skin types.",
             "Infused with the goodness of watermelon extract, it deeply cleanses and unclogs pores of oil and dirt while boosting the cell renewal process for clean, matte and bright skin.",
@@ -1636,8 +1636,9 @@ function dataRetrieve(){
           id: "DK0151",
         },
       ];
-      
       localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
+      
 }
+// localStorage.setItem("DotAndKeyProducts", JSON.stringify(data));
 
 export default dataRetrieve;

@@ -1,5 +1,229 @@
+/*All Font Families*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Ubuntu+Mono&display=swap');
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+#headerItem{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin: 0 20px;
+
+
+}
+.top5Product{ 
+
+    width: 18%;
+    height: 200px;
+    text-align: center;
+    margin: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px ;
+
+} 
+.top5Product img{
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+
+
+}
+
+/* .top5Product a{
+    
+} */
+.top5Product h3{
+    width: 100%;
+    height: 25%;
+font-size: 18px;
+color: black;
+border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+    padding: 5% 2%;
+    font-weight: 700;
+    letter-spacing: .1px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Header Items  */
+
+
+/* SlideBar Items */
+
+.sliderBar{
+    display: flex;
+    overflow-x: scroll;
+    width:100%;
+    margin:7px 0 40px 0;
+}
+.slides{
+    width: 100vw;
+    height: 475px;
+}
+.slides img{
+border-radius: 20px;
+width: 100vw;
+height: 100%;
+}
+
+.sliderBar::-webkit-scrollbar{
+    display: none;
+}
+
+.lineA{
+    color: #3c3c3c;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+
+}
+
+.lineB{
+    color: #3c3c3c;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+}
+.lineB span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.freePro{
+    display: flex;
+    overflow: scroll;
+    width: 78vw;
+    margin:20px auto;
+    height: 286px;
+    border-radius: 15px;
+}
+
+
+
+
+.freePro > div{
+    height: 100%;
+    width: 100%;
+}
+.freePro  > div >img{
+border-radius: 15px;
+height: 100%;
+}
+
+.freePro::-webkit-scrollbar{
+    display: none;
+}
+
+
+.lineC{
+    padding: 31px 0;
+    margin: 50px 0 ;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.lineCA{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.lineCB{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.products{
+    margin: auto;
+    text-align: center;
+    font-size: 18px ;
+    color: #3c3c3c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+}
+.products span{
+    color: #ff6781;
+}
+
+.productsData{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    height: 570px;
+    border: 1px dotted gray;
+}
+
+
+
+.spotLight1,.spotLight2{
+    display: flex;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+
+}
+
+.firstC {
+    /* border: 2px solid green; */
+    width: 497px;
+    height: 497px;
+    border-radius: 15px;
+margin:8px
+
+}
+
+.secondC{
+    /* border: 2px solid yellow; */
+width: 827px;
+height: 497px;
+border-radius: 15px;
+margin: 8px;
+
+
+}
+
+.firstC img{
+width: 100%;
+height: 100%;
+border-radius: 15px;
+
+
+}
+
+.secondC img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
 }
