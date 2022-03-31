@@ -1,17 +1,5 @@
  
-
-
-const freeVitaminsData = [
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ikwi-DESKTOP-banner-resize_11.gif?v=1648032908"
-    },
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/lavendae-desk-sale_1.gif?v=1648126692"
-    }
-  
-  ]
-  
-  const bestSellers = [
+  let  bestSellers = [
     {
         img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-7_9a3af011-3356-4242-82df-c04322d27a6a.jpg?v=1646475324",
         rating:"4.6/5" ,
@@ -63,25 +51,10 @@ const freeVitaminsData = [
     }
   
   ]
+   
+  localStorage.setItem("bestSellers",JSON.stringify(bestSellers))
   
-  const spotlights = [
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-SERUMS_1_1.png?v=1646917496"
-    },
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/5-Probiotics_Gel_1_1.png?v=1646917497"
-    },
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-hairCare_1_1.png?v=1646917497"
-    },
-    {
-        img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/6-CLAY_1_1.png?v=1646917497"
-    }
-  ]
-  
-  
-  
-  const summerPics=[
+  let summerPics=[
     {
       img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pro.png?v=1646543242",
       rating:"4.7/5",
@@ -132,7 +105,10 @@ const freeVitaminsData = [
     }
   ]
   
-  const newestArrivals = [
+
+  localStorage.setItem("summerPics",JSON.stringify(summerPics))
+
+  let newestArrivals = [
     {
       img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/TOBER.png?v=1646547062",
       rating:"4.9/5",
@@ -183,30 +159,10 @@ const freeVitaminsData = [
     }
   ]
   
-  let ikwiImage = "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Desktop_homepage_1_3d9730b7-4aa9-4328-97e5-d7b1762275b0.png?v=1647001294"
-  
-  let sharedWhen = "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/DESKTOP_b3c3b9a2-c923-487b-aa2f-26a68e3d4d43.png?v=1645769083"
-  
-  
-  let smallImage = {
-  clean:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027",
-  provenResult:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546",
-  cruelity:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027",
-  plant:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027"
-    }
-  
-  
-  let awardWinning ="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ezgif.com-gif-maker_ff4dc633-9c9a-40b1-810f-2614147ac68d_720x.gif?v=1615273304"
-  
-  
-  // Set all localStorage data here========================
-  
-  let bazaar ="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1596894078";
-  let vogue ="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1600165794";
-  let elle = "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1596894127"
-  
-  
-  const reviews =[
+   
+localStorage.setItem("newestArrivals",JSON.stringify(newestArrivals))
+
+  let reviews =[
     {
       img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/AHASleepMask1.jpg?v=1635159675",
       desc:"This is my 2nd purchase & I love how it makes me glow in the morning after a long & tiring day at work.",
@@ -239,19 +195,10 @@ const freeVitaminsData = [
     }
   
   ]
-  
-  let skinCareG = "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_64_1_7f2ff662-3a45-45a1-9f0c-952252786d05.png?v=1634885869"
-  
-  
-  let shopByConcern = {
-      img1:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Artboard_1-2_1.jpg?v=1642508302",
-      img2:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Artboard_1_11.jpg?v=1642572083",
-      img3:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Artboard_5.png?v=1643092291",
-      img4:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Artboard_1-3_3.jpg?v=1642508305"
-    }
+   
   
   
-  localStorage.setItem("bestSellers",JSON.stringify(bestSellers))
+  localStorage.setItem("reviews",JSON.stringify(reviews))
   
   
   

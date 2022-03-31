@@ -1,6 +1,6 @@
 /*All Font Families*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Ubuntu+Mono&display=swap');
 
@@ -114,7 +114,7 @@ height: 100%;
 }
 
 
-.freePro{
+.freePro {
     display: flex;
     overflow: scroll;
     width: 78vw;
@@ -150,7 +150,7 @@ height: 100%;
 }
 .lineCA{
     font-size: 20px;
-    font-weight: 100;
+
 
 }
 .lineCB{
@@ -226,4 +226,247 @@ border-radius: 15px;
     height: 100%;
     border-radius: 15px;
 
+}
+
+.frenew{
+    width: 80vw;
+    height:381px;
+    margin: 60px auto;
+    cursor: pointer;
+
+}
+.frenew img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.allImages{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    padding-left: 30px; ;
+    margin: 0 152px;
+}
+
+.girlsI {
+    width: 560px;
+    height: 348px;
+
+}
+.girlsI img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.efficacy{
+    font-weight: 100;
+    font-size: 20px;
+}
+.dotkey1{
+    width: 80%;
+
+margin: 0 auto;
+text-align: center;
+font-size: 22px;
+color: #3c3c3c;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 200;
+padding: 0 60px;
+line-height: 35px;
+margin-top: -40px;
+
+
+}
+.dotkey1 span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.dotkey2{
+
+
+width: 80%;
+
+margin: 0 auto;
+text-align: center;
+font-size: 22px;
+color: #3c3c3c;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 200;
+padding: 0 60px;
+line-height: 35px;
+margin-top: 30px;
+
+
+}
+.dotkey2 span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+#chemiImg{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin:30px auto;
+    
+}
+#chemiImg .cI{
+    width: 152px;
+    height: 152px;
+    
+
+}
+#chemiImg div img{
+    width: 100%;
+    height: 100%;
+}
+
+.sliding-cont{
+
+    display: flex;
+    width: 84%;
+    height: 335px;
+    /* padding: 0 40px; */
+    justify-content: space-between;
+    /* overflow-x: scroll; */
+    margin: auto;
+
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+
+}
+
+
+.content div h1{
+    font-size: 31px ;
+font-family: 'Ubuntu', sans-serif;
+margin: 0 0 20px 0;
+padding: 0 10px;
+padding-top: 50px ;
+color: #3c3c3c;
+text-align: center;
+    /* margin: ; */
+}
+
+
+.content div p{
+    text-align: center;
+    font-size: 20px ;
+    padding: 29px;
+font-family: 'Ubuntu', sans-serif;
+color: #3c3c3c;
+word-wrap: normal;
+/* overflow: ; */
+
+
+}
+.content div {
+    width: 100%;
+    height: 100%;
+}
+
+.content div img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.brandName{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    height: 270px;
+    margin-top: 50px;
+}
+
+.brandName div{
+    text-align: center;
+    margin: auto;
+}
+.brandName div p{
+
+    margin: 0 0 10px 0;
+font-family: 'Ubuntu', sans-serif;
+line-height: 30px;
+font-size: 21px;
+color: #3c3c3c;
+text-align: center;
+padding: 20px;
+}
+
+.brandName div img{
+    width: 142px;
+    height: 142px;
+}
+
+.skinCare{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-bottom: 150px;
+
+}
+
+.skinCareG{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid blue; */
+
+}
+.skinCareG img{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink */
+    ;
+}
+.skinCont{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 150px;
+    margin-top: 10%;
+    /* overflow: scroll; */
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skinCont h2{
+    width: 100%;
+    /* border: 1px solid ; */
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* .skinCont::-webkit-scrollbar{
+    display: none;
+} */
+
+.skinCont button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size:12px ;
+    font-weight: bold;
 }
