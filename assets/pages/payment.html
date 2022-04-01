@@ -1,12 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/77662e35e0.js" crossorigin="anonymous"></script>
     <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
-  </head>
-  <body></body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+        * {
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+        }
+
+        #container {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .main {
+            width: 46%;
+            padding: 0px 0px 0px 20px;
+            background-color: #ffffff;
+
+        }
+
+        .main2 {
+            width: 34%;
+            border-left: 1px solid #c3c3c3;
+            background-color: #fafafa;
+        }
+
+        .box1 {
+            width: 34%;
+            height: 58px;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .box1>P {
+            font-size: 12px;
+        }
+
+        .box1>i {
+            margin: 15px 0px 0px 0px;
+            font-size: 13px;
+        }
+
+        .box2 {
+            border: 1px solid #c3c3c3;
+            width: 90%;
+
+            border-radius: 5px;
+
+        }
+
+        .box3 {
+
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .box4 {
+            color: #ff6781;
+
+        }
+
+        .box4>p {
+            font-size: 12px;
+            margin-top: 18px;
+        }
+
+        .box5 {
+            font-size: 18px;
+            margin: 40px 0px -10px 0px;
+
+        }
+
+
+        .boxdiv {
+            justify-content: space-between;
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+            width: 90%;
+            height: 50px;
+
+        }
+        
+        .box7 {
+            margin-left: -140px;
+            margin-top: 17px;
+        }
+
+
+        .box9 {
+            height: 58px;
+            width: 160px;
+            font-size: 15px;
+            margin-right: 60px;
+            cursor: pointer;
+            background: #616160;
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .box9:hover {
+            background: #414140;
+            color: white;
+        }
+
+        .style {
+            display: flex;
+            justify-content: space-between;
+            margin: 28px 0px 60px 0px;
+        }
+
+        .style>a {
+            margin-top: 20px;
+        }
+
+        .style2 {
+            margin-top: 2px;
+            width: 50%;
+
+        }
+
+        .box10 {
+
+            display: flex;
+            gap: 20px;
+            font-size: 12px;
+            color: #ff6781;
+        }
+
+        .box11 {
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        .box11>div {
+            border-bottom: 1px solid #c3c3c3;
+        }
+
+        .box8 {
+            display: flex;
+            border: 1px solid green;
+        }
+
+        .box8>div:nth-child(1) {
+
+            margin-top: 10px;
+
+
+        }
+
+        .style3 {
+            display: flex;
+            justify-content: end;
+            margin: auto;
+
+            margin-left: 200px;
+        }
+
+        .style3>img {
+            height: 25px;
+            width: 100%;
+            margin-right: 10px;
+        }
+
+        #email {
+            margin-left: -40px;
+        }
+
+        #ship_to {
+            margin-left: -18px;
+        }
+        .payment{
+            background: #f8f8f8;
+            width: 85%;
+            border: 1px solid;
+            border-radius: 5px;
+            justify-content: center;
+            margin: auto;
+            margin-right: 77px;
+            
+        }
+        .payment h2{
+            text-align: center;
+            letter-spacing: 2px ;
+            margin-bottom: 20px;
+
+        }
+         .label{
+            display: flex;
+        
+            margin:0px 0px 6px 120px;
+        }
+        .input{
+            padding: 13px 2px 13px 35px;
+            width: 50%;
+            border: 1px solid #dddddd;
+            letter-spacing: 1px;
+            outline: none;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+        
+        }
+        .input2{
+            padding: 13px 2px 13px 27px;
+            width: 60%;
+            border: 1px solid #dddddd;
+            letter-spacing: 1px;
+            outline: none;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+        
+        }
+        .card_grp{
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+
+        }
+        .card_item{
+            width: 20%;
+        }
+        .space{
+            margin-bottom: 20px;
+        }
+        .label2{
+            margin: 0px 0px 0px 10px ;
+        }
+        .icon_relative{
+            position: relative;
+        }
+        .icon_relative .fa-user,
+        .icon_relative .fa-credit-card{
+            position: absolute;
+            margin: -31px 0px 0px 130px ;
+             
+        }
+        .icon_relative .fa-lock,
+        .icon_relative .fa-calendar-days{
+            position: absolute;
+            margin: -32px 0px 0px 15px ;
+             
+        }
+        .wrapper{
+            display: none;
+        }
+ 
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+        <div class="main">
+            <img class="box1" style="margin-top: 50px;"
+                src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Dot_Key_Logo.png?128304" alt="">
+            <div class="box1">
+                <p><a style="color: #ff6781;" href="./information.html">Information</a></p>
+                <i class="fa-solid fa-angle-right"></i>
+                <p><a style="color: #ff6781;" href="./shipping.html">Shipping</a></p>
+                <i class="fa-solid fa-angle-right"></i>
+                <p>Payment</p>
+            </div>
+            <div class="box2">
+                <div class="box3" style="border-bottom: 1px solid #c3c3c3;">
+                    <p>Contact
+                    <p id="email"> </p>
+                    </p>
+
+                    <a class="box4" href="./information.html">
+                        <p>Change</p>
+                    </a>
+                </div>
+
+                <div class="box3" style="border-bottom: 1px solid #c3c3c3;">
+                    <p>Ship to
+                    <p id="ship_to"></p>
+                    </p>
+
+                    <a class="box4" href="./information.html">
+                        <p>Change</p>
+                    </a>
+                </div>
+                <div class="box3">
+                    <p>Method
+                    <p class="box7">Standard (3-5 Business Days) · Free</p>
+                    </p>
+
+                </div>
+
+            </div>
+            <p class="box5">Payment</p>
+            <p>All transactions are secure and encrypted.</p>
+            <div class="box6">
+                <div class="box8 boxdiv">
+                    <div style="display: flex;">
+                        <div style="margin: 6px 5px 0px 0px;">
+                            <input style="cursor:pointer" type="radio" name="payment" id="btn" value="card" onclick="show()">
+                        </div>
+                        <div>
+                            <img class="style2"
+                                src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paytm@2x-af01977ff64627f57925062e195a194de280c6c879267a51456c0d579acb90c2.png"
+                                alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="style3">
+                        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                            alt=""><img src="https://pngimg.com/uploads/mastercard/mastercard_PNG14.png" alt=""><img
+                            src="https://www.nicepng.com/png/detail/358-3588242_maestro-logo-png-transparent-maestro-card-logo.png"
+                            alt=""><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapZ-Ndsp-zbxRZK0kpYxvx7nh05AMgLuSC7xZbak1h745-bMH"
+                            alt="">
+                    </div>
+                </div>
+                
+                <div class="wrapper"  id="card">
+                    <div class="payment">
+                        <h2>Payment Gateway</h2>
+                        <div class="form">
+                            <div class="card space icon_relative">
+                                <label class="label">Card Holder :</label>
+                                <input type="text" class="input" placeholder="Card Holder Name">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="card space icon_relative">
+                                <label class="label">Card Number :</label>
+                                <input type="text" class="input" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <div class="card_grp space">
+                                <div class="card_item icon_relative">
+                                    <label class="label2">Expiry date :</label>
+                                    <input type="text" class="input2" placeholder="00 / 00" data-mask="00 / 00">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="card_item icon_relative">
+                                    <label class="label2">CVV :</label>
+                                    <input type="text" class="input" placeholder="000" data-mask="000">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+               
+                <div class="box8 boxdiv">
+                    <div style="display: flex;" >
+                        <div style="margin: 6px 5px 0px 0px;">
+                            <input style="cursor:pointer" type="radio" name="payment" id="btn1" value="card2" onclick="show()">
+                        </div>
+                        <div>
+                            <img src="https://cdn.shopify.com/s/files/applications/e273f27d4c4fa65fc8e2af05e552f04e.png?height=24&1637057371"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="style3">
+                        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                            alt=""><img src="https://pngimg.com/uploads/mastercard/mastercard_PNG14.png" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapZ-Ndsp-zbxRZK0kpYxvx7nh05AMgLuSC7xZbak1h745-bMH"
+                            alt="">
+                        <img src="https://i0.wp.com/zeevector.com/wp-content/uploads/2021/03/rupay-logo.png?resize=600%2C358&ssl=1"
+                            alt="">
+                    </div>
+                </div>
+                <div class="wrapper"  id="card1">
+                    <div class="payment">
+                        <h2>Payment Gateway</h2>
+                        <div class="form">
+                            <div class="card space icon_relative">
+                                <label class="label">Card Holder :</label>
+                                <input type="text" class="input" placeholder="Card Holder Name">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="card space icon_relative">
+                                <label class="label">Card Number :</label>
+                                <input type="text" class="input" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <div class="card_grp space">
+                                <div class="card_item icon_relative">
+                                    <label class="label2">Expiry date :</label>
+                                    <input type="text" class="input2" placeholder="00 / 00" data-mask="00 / 00">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div class="card_item icon_relative">
+                                    <label class="label2">CVV :</label>
+                                    <input type="text" class="input" placeholder="000" data-mask="000">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="box8 boxdiv">
+                    <div style="display: flex;">
+                        <div style="margin: 6px 5px 0px 0px;">
+                            <input style="cursor:pointer" type="radio" name="payment" id="btn2" value="card3" onclick="show()">
+                        </div>
+                        <div>
+                            <p style="margin-top:5px ;">Cash on Delivery</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="box5">Billing address</p>
+            <p style="margin-bottom: 25px;">Select the address that matches your card or payment method.</p>
+
+            <div class="box11">
+                <div style="display: flex;">
+                    <div style="margin: 14px 5px 0px 0px;">
+                        <input style="cursor:pointer" type="radio" name="address">
+                    </div>
+                    <div>
+                        <p style="margin-top:13px ;">Same as shipping address</p>
+                    </div>
+                </div>
+
+
+                <div style="display: flex;">
+                    <div style="margin: 14px 5px 0px 0px;">
+                        <input style="cursor:pointer" type="radio" name="address">
+                    </div>
+                    <div>
+                        <p style="margin-top:13px ;">Use a different billing address</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="style">
+                <a style="color: #ff6781;" href="./shipping.html"><i class="fa-solid fa-angle-left"></i>Return to
+                    shipping</a>
+                <button onclick="toOrder()" class="box9">Complete order</button>
+            </div>
+            <hr style="width: 93%; margin-left: 0px;">
+            <div class="box10">
+                <p>Refund policy</p>
+                <p>Shipping policy</p>
+                <p>Privacy policy</p>
+                <p>Terms of service</p>
+            </div>
+        </div>
+        <div class="main2"></div>
+    </div>
+
+</body>
+
 </html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script>
+    var get = JSON.parse(localStorage.getItem("shipping"))
+    displaydata(get)
+    console.log(get)
+    function displaydata(get) {
+        get.map(function (el) {
+            var mail = document.getElementById("email")
+            mail.innerHTML = el.email
+            var ship = document.getElementById("ship_to")
+            ship.innerHTML = el.address + ", " + el.pin + ", " + el.city + ", " + el.country
+
+        })
+    }
+    
+    function show(){
+        let btn = document.getElementById("btn")
+        let btn1 = document.getElementById("btn1") 
+        let btn2 = document.getElementById("btn2")
+ 
+       document.getElementById("card").style.display = btn.checked ? 'block' : 'none'
+       document.getElementById("card1").style.display = btn1.checked ? 'block' : 'none'
+    }
+                                   
+    
+     function toOrder() {
+        let btn = document.getElementById("btn").checked
+        let btn1 = document.getElementById("btn1").checked 
+        let btn2 = document.getElementById("btn2").checked
+ 
+        if(btn===true || btn1===true || btn2===true){
+            alert("OTP Sent Successfully")
+            window.location = "./OTP.html"
+        }else{
+            alert("invalid Credentails")
+        }
+   }
+  
+
+ 
+</script>
