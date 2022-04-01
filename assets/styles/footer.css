@@ -1,0 +1,110 @@
+body {
+    font-family: PS Commons;
+}
+.blankdiv{
+    height: 50px;
+    width:80%;
+    
+}
+
+footer {
+    background-color: white;
+    color: #42423f;
+    font-weight: bold;
+    font-size: 22px;
+
+   
+}
+
+#footer {
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #42423f;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.graycolor {
+    color: #7c7c7d
+}
+
+/* a:hover {
+    color: white;
+} */
+
+.icon-color {
+    color: white;
+    font-size: 30px;
+    background-color: none;
+}
+
+/* .colorwhite {
+    color: white;
+} */
+
+
+
+.fotbottom {
+    display: flex;
+    justify-content: space-around
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    font-size:20px;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  }
+  button{
+      width: 95px;
+      height:30px;
+      background-color:#42423f;
+      color: aliceblue;
+  }
+  #followpart{
+      display: flex;
+      text-align: right;
+      margin-top:40px;
+      gap:30px;
+     
+      align-items: center;
+      
+      
+      
+    
+  }
+  #icon{
+      display: flex;
+      gap:20px;
+      margin-top:20px;
+      font-size: 25px;
+  }
+  h2{
+    margin-top:5px;
+    font-size: 25px;
+  }
+
+  .icon > a { 
+      margin-left: 20px;
+      font-size:24px;
+    }
+
+
+
+
+
+
+
+
+
