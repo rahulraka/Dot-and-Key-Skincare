@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/77662e35e0.js" crossorigin="anonymous"></script>
+    <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Montserrat:wght@400;700&family=Ubuntu:wght@300&display=swap');
+        *{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #otpBox {
+            width: 35%;
+            margin: auto;
+            margin-top: 12%;
+            padding: 2%;
+            background-color: #9bd9f7;
+            border-radius: 50px;
+        }
+
+        #inputOTP {
+            display: flex;
+            margin-left: 15%;
+        }
+
+        b {
+            font-size: 20px;
+            color: black;
+            margin-right: 10px;
+            letter-spacing: 1.5px;
+        }
+
+        #OTP {
+            width: 200px;
+            height: 20px;
+            outline: none;
+        }
+        #OTP::-webkit-outer-spin-button,
+        #OTP::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        .btn {
+            margin: auto;
+            margin-left: 25%;
+            background-color: #fa1717;
+            color: rgb(248, 248, 248);
+            width: 250px;
+            height: 30px;
+            font-weight: bolder;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        
+        }
+
+        #text1 {
+            font-weight: bolder;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 3px;
+            letter-spacing: 1.5px;
+        }
+
+        #text2 {
+            text-align: center;
+            font-size: 17px;
+            margin-top: 1px;
+            font-weight: lighter;
+            color: rgb(20, 14, 12);
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+    <div id="otpBox">
+        <div>
+            <p id="text1">One-Time Password(OTP)</p>
+            <p id="text2">
+                4-digit code has been sent on your registered mobile number
+            </p>
+        </div>
+
+        <form action="" id="My">
+            <div id="inputOTP">
+                <b>Enter You OTP : -</b>
+                <input id="OTP" type="number" name="" required />
+            </div>
+            <br />
+            <input class="btn" type="submit" value="Submit OTP" id="" />
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script>
+    setTimeout(threeSeconds, 3000);
+    function threeSeconds(){
+        alert("1234 is your OTP")
+    }
+        document.querySelector("#My").addEventListener("submit", confirm);
+
+        function confirm(event) {
+        event.preventDefault();
+        var otp = document.querySelector("#OTP").value;
+        if (otp == "1234") {
+            document.querySelector("#My").textContent = "";
+            window.location = "./plceodr.html"
+        } else {
+            alert("Invalid OTP")
+        }
+        }
+</script>
