@@ -6,21 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
     <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
-
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+ 
     
     <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
 
     <script src="https://use.fontawesome.com/203f96b65a.js"></script>
-
     <link rel="stylesheet" href="./assets/styles/index.css">
+
+    <link rel="stylesheet" href="./Govind/navbar.css" />
+    <link rel="stylesheet" href="./Govind/footer.css" />
+ 
   </head>
   <body>
     <!----------------- Import header here-------------------- -->
+    <div id="bar"></div>
 
+
+<div id="navbar" ></div>
       <!-- -------------Import Header here--------------------- -->
 
-      <div id="button">Button</div>
+
+
+
+      <!-- <div id="button">Button</div> -->
 
       
         <div id="dropdownC">
@@ -47,36 +63,52 @@
           <div class="imgD"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-Burger-Menu-Vit-C.jpg?v=1647002812" alt=""></div>
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <main>
 
 
         <div id="headerItem">
           <div class="top5Product">
-           <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-1_6.png?v=1640345399" alt="bodyAndHair">
-            <h3>BODYCARE</h3></a> 
+           <a href="#" class="bodyCare"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-1_6.png?v=1640345399" alt="bodyAndHair">
+            <h3 class="bodyCare">BODYCARE</h3></a> 
           </div>
           <div class="top5Product">
-            <a href="#">
+            <a href="#"  class="bodyCare">
               <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2_10_1dbebc34-9644-403f-8852-c556d836e66c.png?v=1643087515" alt="hairAndCare">
               <h3>HAIRCARE</h3>
             </a>
           </div>
           <div class="top5Product">
-          <a href="#">
+          <a href="#" class="bodyCare">
             <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3_11.png?v=1640345346" alt="nutrition">
             <h3>NUTRITION</h3>
           </a>
           </div>
           <div class="top5Product">
-            <a href="#">
+            <a href="#" class="bodyCare">
               <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1_19.png?v=1643092197" alt="serum">
-              <h3>SERUM</h3>
+              <h3 >SERUM</h3>
             </a>
           </div>
           <div class="top5Product">
-            <a href="#">
+            <a href="#" class="bodyCare">
               <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-1_7_47c1a313-615a-4e4f-994e-37886ca26458.png?v=1643105518" alt="moisturizer">
-              <h3>MOISTURIZER</h3>
+              <h3 >MOISTURIZER</h3>
             </a>
           </div>
 
@@ -365,12 +397,42 @@
 
 
 
-
+<footer id="footer"></footer>
 
 
 
 
   </body>
-  <script type="module" src="./assets/scripts/index.js"></script>
-  <script src="./components/jsonData.js"></script>
+  <script  src="./assets/scripts/index.js"></script>
+
+
+
+  <script type="module">  
+  
+  
+
+  import {navbarTop,navbar} from "./components/mainNavbar.js";
+  import footer from "./Govind/components/footer.js";
+ 
+
+  console.log(footer)
+
+
+let bar = document.querySelector("#bar");
+bar.innerHTML = navbarTop();
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+console.log(navbarDiv)
+console.log(bar)
+
+  let footerdiv= document.querySelector("#footer")
+
+  footerdiv.innerHTML=footer();
+
+
+
+  
+  
+  </script>
 </html>

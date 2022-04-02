@@ -7,12 +7,14 @@
 
 
 
+.nameTitle{
+    font-size: 16px;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 main{
@@ -25,7 +27,6 @@ main{
     justify-content: space-around;
     /* border: 1px solid black; */
     margin: 0 20px;
-
 
 }
 .top5Product{ 
@@ -61,6 +62,11 @@ border-bottom-left-radius: 8px ;
     font-weight: 700;
     letter-spacing: .1px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+
+.bodyCare{
+    text-decoration: none;
 }
 
 
@@ -653,6 +659,10 @@ padding: 6px;
 }
 
 
+
+
+
+/* 
 #button{
     width: 50px;
     height: 50px;
@@ -667,7 +677,7 @@ padding: 6px;
     position:fixed;
     top: 0;
     left: 50%;
-}
+}  */
 
 #dropdownC{
     display: none;
@@ -732,3 +742,5 @@ font-family: 'Roboto', sans-serif;
 border-radius: 10px;
 margin: 30px 0 0 40px;
 }
+
+

@@ -1,6 +1,7 @@
 var hideNav=document.querySelector("#dropdownC");
-var category=document.querySelector("#button").addEventListener("click",hideFunc);
-function hideFunc(){
+// var category=document.querySelector("#button").addEventListener("click",hideFunc);
+
+function navFunc(){
 // hideNav.style.top="-10px"
 if(hideNav.style.display==="none"){
 hideNav.style.display="flex"
@@ -251,10 +252,24 @@ function bestS(mybestSellers){
     let img = document.createElement("img")
     img.src = elem.img ;
 
+    let logoDiv=document.createElement("div")
+    
+    let logoimg = document.createElement("img")
+    logoimg.src="https://img.icons8.com/fluency/48/000000/star.png"
+    logoimg.style.width="20px"
+    logoimg.style.height="20px"
+
+    
+
     let rating = document.createElement("h5")
     rating.innerText = elem.rating ;
 
+
+    logoDiv.append(logoimg,rating)
+   logoDiv.style.display="flex"
     let title = document.createElement("h3")
+
+    title.setAttribute("class","nameTitle")
 
     title.innerText = elem.title ;
  
@@ -278,7 +293,7 @@ div1.setAttribute("class","div1")
     btn.setAttribute("class","divButton")
 
 
-div.append(img,rating,title,div1,btn)
+div.append(img,logoDiv,title,div1,btn)
 
 products1.append(div)
 
@@ -303,12 +318,29 @@ function summerP(mysummerPics){
     let img = document.createElement("img")
     img.src = elem.img ;
 
+
+    let logoDiv=document.createElement("div")
+    
+    let logoimg = document.createElement("img")
+    logoimg.src="https://img.icons8.com/fluency/48/000000/star.png"
+    logoimg.style.width="20px"
+    logoimg.style.height="20px"
+
+    
+
     let rating = document.createElement("h5")
     rating.innerText = elem.rating ;
+
+
+    logoDiv.append(logoimg,rating)
+   logoDiv.style.display="flex"
 
     let title = document.createElement("h3")
 
     title.innerText = elem.title ;
+
+    title.setAttribute("class","nameTitle")
+
  
     let div1 = document.createElement("div")
 div1.setAttribute("class","div1")
@@ -330,7 +362,7 @@ div1.setAttribute("class","div1")
     btn.setAttribute("class","divButton")
 
 
-div.append(img,rating,title,div1,btn)
+div.append(img,logoDiv,title,div1,btn)
 
 products2.append(div)
 
@@ -355,13 +387,28 @@ function newestA(newestArrivals){
     let img = document.createElement("img")
     img.src = elem.img ;
 
+    let logoDiv=document.createElement("div")
+    
+    let logoimg = document.createElement("img")
+    logoimg.src="https://img.icons8.com/fluency/48/000000/star.png"
+    logoimg.style.width="20px"
+    logoimg.style.height="20px"
+
+    
+
     let rating = document.createElement("h5")
     rating.innerText = elem.rating ;
+
+
+    logoDiv.append(logoimg,rating)
+   logoDiv.style.display="flex"
 
     let title = document.createElement("h3")
 
     title.innerText = elem.title ;
  
+    title.setAttribute("class","nameTitle")
+
     let div1 = document.createElement("div")
 div1.setAttribute("class","div1")
 
@@ -382,7 +429,7 @@ div1.setAttribute("class","div1")
     btn.setAttribute("class","divButton")
 
 
-div.append(img,rating,title,div1,btn)
+div.append(img,logoDiv,title,div1,btn)
 
 products3.append(div)
 
@@ -444,3 +491,4 @@ products4.append(mainDiv)
   })
 
 }
+
