@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        #container{
+            width:80%;
+            justify-content: center;
+            margin-left: 10%;
+            height: 200px;
+            display: grid;
+            grid-template-columns:45% 47%;
+            gap: 3%;
+            
+        }
+       
+        
+    </style>
+
+</head>
+<body>
+   
+    <div id="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
+<script>
+
+
+let cartArray = JSON.parse(localStorage.getItem("cartArr"))||[];
+
+  
+let displayD=JSON.parse(localStorage.getItem("displayData")) ;
+console.log("xyz",displayD)
+
+Dis(displayD);
+
+function Dis(elem){
+//  displayD.map(function(elem){
+
+    //img section:-->
+let img=document.createElement("img");
+img.src=elem.image;
+img.style.width="100%";
+img.style.height="100%";
+img.style.borderRadius="4%";
+
+//div1 append:-->
+document.getElementById("div1").append(img);
+
+
+//details:-->
+let proName=document.createElement("h1");
+proName.innerText=elem.name;
+
+let rat=document.createElement("h3")
+rat.innerText="★★★★☆";
+
+//Price section:-->
+    var sp=document.createElement("s")
+    sp.innerText="Rs: "+elem.price;
+    sp.style.paddingtop="25px";
+    sp.style.paddingRight="20px";
+
+    var p=document.createElement("span")
+    p.innerText="Rs: "+elem.strike;
+    p.style.paddingtop="25px";
+    p.style.color="rgb(240, 39, 156)";
+
+    let pDiv=document.createElement("h4");
+    pDiv.append(sp,p)
+
+    let iaT=document.createElement("p");
+    iaT.innerText="Inclusive of All Taxes";
+
+//size section:-->
+    let size=document.createElement("h4");
+    size.innerText="SIZE";
+
+    let sizeDiv=document.createElement("div");
+    sizeDiv.style.border="1px solid black";
+    sizeDiv.style.width="80px";
+    sizeDiv.style.height="50px";
+    sizeDiv.style.textAlign="center";
+    let sizeDivT=document.createElement("p");
+    sizeDivT.innerText="300 ml";
+    sizeDiv.append(sizeDivT)
+
+    //extra text:-->
+    let spanText=document.createElement("p");
+    spanText.innerText=`With nourishing Damask ${elem.name}, this body serum lotion spreads evenly for hydrated, soft & dewy glowing skin.`
+
+//add to cart:-->
+    var btn=document.createElement("button")
+    btn.innerText="Add To Cart";
+    btn.style.fontSize="20px"
+    btn.style.background="rgb(240, 39, 156)"
+    btn.style.width="300px";
+    btn.style.marginTop="20px";
+    btn.style.borderRadius="5px"
+    btn.style.color="white";
+    btn.style.height="30px";
+    btn.style.border="none";
+    btn.addEventListener("click",()=>{
+        cartArray.push(el);
+        localStorage.setItem("cartArr",JSON.stringify(cartArray));
+        window.location.href="#";
+    })
+
+//favourite icon section:-->
+    var btn2=document.createElement("i")
+    btn2.setAttribute("class","fa fa-heart-o");
+    btn2.style.fontSize="20px";
+    btn2.style.marginLeft="20px";
+    btn2.style.height="30px";
+
+//feel section:-->
+    let feel=document.createElement("h3");
+    let f1=document.createElement("span")
+    f1.innerText="Feel the ";
+    let f2=document.createElement("span")
+    f2.innerText="Love";
+    f2.style.fontStyle="italic";
+    feel.append(f1,f2)
+
+    //div2 append:-->
+    document.getElementById("div2").append(proName,rat,pDiv,iaT,size,sizeDiv,btn,btn2,spanText,feel);
+
+
+// })
+}
+</script>
