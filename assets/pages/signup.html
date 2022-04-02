@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/77662e35e0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/../components/main.css" />
   <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
@@ -82,6 +83,7 @@
 </head>
 
 <body>
+  <div id="navbar"></div>
   <p class="style">Create Account</p>
   <a href="https://www.facebook.com">
     <div class="style1">
@@ -107,8 +109,32 @@
       <input type="submit" value="Create" class="style4">
     </form>
   </div>
+  <div id="footer"></div>
 </body>
 </html>
+<script type="module">
+  import dataRetrieve from "/../components/jsonData.js";
+  dataRetrieve();
+  
+  import {navbarTop,navbar,footer} from "../../components/mainNavbar.js";
+ 
+ 
+
+  // console.log(footer)
+
+
+ 
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+console.log(navbarDiv)
+ 
+
+  let footerdiv= document.querySelector("#footer")
+
+  footerdiv.innerHTML=footer();
+</script>
+
 <script>
 document.querySelector("#form").addEventListener("submit", formSubmit)
 var arr = JSON.parse(localStorage.getItem("verify")) || []

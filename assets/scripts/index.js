@@ -9,6 +9,10 @@ else {
     hideNav.style.display="none"
 }
 }
+function userFun(){
+  window.location.href = "./assets/pages/login.html"
+  // console.log("user")
+}
 
 
 
