@@ -26,7 +26,7 @@ function navbarTop(){
 
 function navbar(){
     return `      <div>
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars" id="button" onclick="navFunc()"></i>
   </div>
 
   <div>
