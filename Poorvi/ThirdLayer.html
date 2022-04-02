@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+ 
+    
+    <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/203f96b65a.js"></script>
 
     <script src="https://kit.fontawesome.com/0a6d51cc4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../components/main.css"/>
 
     <title>Document</title>
     <style>
@@ -13,23 +25,52 @@
             width:80%;
             justify-content: center;
             margin-left: 10%;
-            height: 200px;
+            /* height: 200px; */
             display: grid;
             grid-template-columns:45% 47%;
             gap: 3%;
-            
+            padding-top: 20px;
         }
-       
+        .fa-user{
+         margin-left: 20px;
+     }
         
     </style>
 
 </head>
 <body>
-   
+    <div id="bar"></div>
+    <div id="navbar"></div>
+     <div id="container"></div>
+     <div id="dropdownC">
+ 
+         <div class="conD">
+ 
+           <ul >
+             <li>WHAT'S NEW</li>
+             <li>TOP SUMMER PICKS</li>
+             <li>BEST SELLERS</li>
+             <li>SHOP BY INGREDIENTS</li>
+             <li>SHOP BY CONCERN</li>
+             <li><a href="#" id="shopAll">SHOP ALL PRODUCTS</a></li>
+             <li>HAIR CARE</li>
+             <li>BODY CARE</li>
+             <li>IKWI NUTRITION</li>
+             <li>KNOW US BETTER</li>
+             <li>PROFILE</li>
+             <li>LOG IN</li>
+                        </ul>
+ 
+ 
+         </div>
+         <div class="imgD"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-Burger-Menu-Vit-C.jpg?v=1647002812" alt=""></div>
+ 
+       </div>
     <div id="container">
         <div id="div1"></div>
         <div id="div2"></div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
 <script>
@@ -137,4 +178,45 @@ rat.innerText="★★★★☆";
 
 // })
 }
+
+var hideNav=document.querySelector("#dropdownC");
+// var category=document.querySelector("#button").addEventListener("click",hideFunc);
+
+function navFunc(){
+// hideNav.style.top="-10px"
+if(hideNav.style.display==="none"){
+hideNav.style.display="flex"
+} 
+else {
+    hideNav.style.display="none"
+}
+}
 </script>
+
+<script type="module">   
+  
+  
+
+    import {navbarTop,navbar,footer} from "../components/mainNavbar.js";
+    
+    console.log(navbar)
+   
+  
+    console.log(footer)
+    console.log(navbarTop)
+  
+  
+  let bar = document.querySelector("#bar");
+  bar.innerHTML = navbarTop();
+  let navbarDiv = document.querySelector("#navbar");
+  navbarDiv.innerHTML = navbar();
+  
+  console.log(navbarDiv)
+  console.log(bar)
+  
+    let footerdiv= document.querySelector("#footer")
+  
+    footerdiv.innerHTML=footer();
+  
+  
+</script>   
