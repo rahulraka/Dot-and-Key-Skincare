@@ -174,39 +174,59 @@
     }
 
     .main4 {
-      display: flex;
+      
       justify-content: space-between;
       margin: auto;
       margin-top: 20px;
-      
+       
 
-    } 
-    .main4>div:nth-child(1){
-      display: flex;
+
     }
-    .main4>div>div>img{
-      height: 70px;
-      width: 70px;
+
+    .main4>div{
+      display: flex;
+       
+      margin-top: 10px;
+    }
+ 
+
+    .imge {
+      height: 80px;
+      width:80px;
       border-radius: 10px;
     }
-    .main4>div:nth-child(1){
+
+    .div1{
+     
       font-size: 13px;
       font-weight: 600;
+      
     }
-    .main5{
-      margin: -5px 0px 0px 10px;
+
+    .main5 {
+      margin: -5px 10px 0px 10px;
+       
+      width: 300px;
     }
-    .main5>p:nth-child(2){
+
+    .mili{
       margin-top: -10px;
       color: #888484;
     }
-    .main6{
+
+    .main6 {
       display: flex;
       justify-content: space-between;
       margin: auto;
       margin: -21px 0px 0px 0px;
     }
-   
+    .pricediv{
+      margin: 15px 0px 0px 0px;
+    }
+    .main8{
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 </head>
 
@@ -274,42 +294,24 @@
       <hr>
 
       <div class="main4">
-        <!-- <div>
-          <div>
-            <img
-              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/listingimages_e0168ccf-7f15-494e-8e37-47ab8ae05e03_small.png?v=1647929061"
-              alt="">
-
-          </div>
-          <div class="main5">
-            <p>10% AHA + 2% BHA EXFOLIATING GLOW HYDRO PEEL</p>
-            <p>30ml</p>
-          </div>
-        </div>
-        <div>
-          <p>₹985.06</p>
-           
-           
-        </div>
+ 
       </div>
+      
       <hr>
-      <div class="main4">
-        <p>Subtotal</p>
-        <p>₹1,550.06</p>
+      <div class="main8">
+        <p>Total</p>
+        <p id="priceTotal">0</p>
       </div>
-      <div class="main6">
+      <div class="main8">
         <p>Shipping</p>
         <p>Free</p>
       </div>
       <hr>
 
-      <div class="main4">
-      <h4>Total <p>Including in taxes</p></h4>
-      <h2>rs 11452</h2>
-     </div>
+ 
 
 
-    </div> -->
+    </div>
   </div>
 
 </body>
@@ -354,37 +356,57 @@
   }
 
   var arr2 = JSON.parse(localStorage.getItem("cartArr"))
+  console.log(arr2)
+
+
   displayData2(arr2)
-  function displayData2(arr2){
-    document.getElementById("main4").innerHTML=""
-    arr2.map(function(el){
+  function displayData2(arr2) {
+    document.querySelector(".main4").innerHTML = ""
+    console.log("hyy")
+    arr2.map(function (el) {
       let div1 = document.createElement("div")
+      div1.className = "div1"
+
       let div2 = document.createElement("div")
       let imge = document.createElement("img")
-      imge.src = el.imge
-      
+      imge.className = "imge"
+      imge.src = el.images[0]
+
       let div3 = document.createElement("div")
-      div3.className="main5"
+      div3.className = "main5"
       let p = document.createElement("p")
-      p.innerText = el.p
+      p.innerText = el.title
       let p1 = document.createElement("p")
-      p1.innerText = el.p1
+      p1.className = "mili"
+      p1.innerText = "30ml"
 
       let div4 = document.createElement("div")
       let p2 = document.createElement("p")
-      p2.innerText = el.p2
+      p2.className = "pricediv"
+      p2.innerText = "₹ " + el.price
 
       div2.append(imge)
-      div3.append(p,p1)
-      div1.append(div2,div3)
-
+      div3.append(p, p1)
       div4.append(p2)
+      div1.append(div2,div3,div4)
 
-      document.getElementById("main4").append(div1,div4)
+      
+
+      document.querySelector(".main4").append(div1)
 
 
     })
   }
+  let total1 = document.querySelector("#priceTotal")
+  function priceAdd(){
+    let total = 0
+    for(let i=0; i<arr2.length; i++){
+       total+= +arr2[i].price
+    } 
+    console.log(total) 
+    total1.innerHTML= `₹  ${total}`
+  }
+   priceAdd()
 
 
 </script>
