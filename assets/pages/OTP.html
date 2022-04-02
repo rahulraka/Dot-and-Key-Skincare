@@ -112,16 +112,18 @@
 
 </html>
 <script>
+    // * (max - min + 1)) + min
+    let randomOtp= Math.floor(Math.random()*(9999-1000+1)+1000 )
     setTimeout(threeSeconds, 3000);
     function threeSeconds(){
-        alert("1234 is your OTP")
+        alert(`${randomOtp} is your OTP`)
     }
         document.querySelector("#My").addEventListener("submit", confirm);
 
         function confirm(event) {
         event.preventDefault();
         var otp = document.querySelector("#OTP").value;
-        if (otp == "1234") {
+        if (otp == randomOtp) {
             document.querySelector("#My").textContent = "";
             window.location = "./plceodr.html"
         } else {

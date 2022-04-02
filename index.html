@@ -88,7 +88,7 @@
             <h3 class="bodyCare">BODYCARE</h3></a> 
           </div>
           <div class="top5Product">
-            <a href="#"  class="bodyCare">
+            <a href="./Govind/navbar.html"  class="bodyCare">
               <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2_10_1dbebc34-9644-403f-8852-c556d836e66c.png?v=1643087515" alt="hairAndCare">
               <h3>HAIRCARE</h3>
             </a>
@@ -413,7 +413,9 @@
 
   import {navbarTop,navbar} from "./components/mainNavbar.js";
   import footer from "./Govind/components/footer.js";
- 
+  import dataRetrieve from "./components/jsonData.js"
+console.log(dataRetrieve) 
+dataRetrieve()
 
   console.log(footer)
 
@@ -423,8 +425,8 @@ bar.innerHTML = navbarTop();
 let navbarDiv = document.querySelector("#navbar");
 navbarDiv.innerHTML = navbar();
 
-console.log(navbarDiv)
-console.log(bar)
+// console.log(navbarDiv)
+// console.log(bar)
 
   let footerdiv= document.querySelector("#footer")
 

@@ -13,40 +13,24 @@ navbarDiv.innerHTML = navbar();
   footerdiv.innerHTML=footer();
   // -----------------------------------------------
   let cartBox = document.querySelector(".cartBox"); 
-  let cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  let cartProducts = JSON.parse(localStorage.getItem("cartArr")) || [];
 
-  // ------------------------------------------------
   
-  var data = []
-  function moviesdata(imgurl, name, cutprize,prize ) {
-      this.imgurl = imgurl;
-      this.name = name;
-      this.cutprize = cutprize;
-      this.prize=prize;
-      
+  var data1 = JSON.parse(localStorage.getItem("dotAndKeyProducts"))
+  let data=[]
+  for(let i=0;i<data1.length;i++) {
+    if(data1[i].category=="Moisturizer"){
+
+      data.push(data1[i])
+    }
   }
-  var one = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_2_78dd953a-9e91-4c53-8127-68f733ff8f8c_360x.jpg?v=1646474987", "Vitamin C+E Super Bright Moisturizer", "RS. 595","565")
-  var two = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_2_360x.jpg?v=1646475136", "Cica Calming Anti-Acne Night Gel ","RS. 595","565")
-  var three = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pro_360x.png?v=1646543242", "72 Hr Hydrating Gel with Probiotics ", "RS. 745","670")
-  var four = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-12_360x.jpg?v=1646474736", "Retinol + Ceramide Night Cream", "RS. 945","850")
-  var five = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-10_360x.jpg?v=1646475087", "Watermelon SuperGlow Matte ", "RS. 695","590")
-  var six = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_2_720x.jpg?v=1646475136 ", "AVOCADO SMOOTHIE DAY CREAM SPF 20", "RS. 845","676")
-  var seven = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/day-night_1800x1800_1_360x.png?v=1628595712", "DAY & NIGHT CARE COMBO", "RS. 1790","1611")
-  var eight = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-L_360x.jpg?v=1638974908", "HAND CREAM + SANITIZER, LAVENDER", "RS. 850","720")
-  var nine = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/FootCream-Lav_Pep_540x.jpg?v=1638974857", "FOOT CREAM + DEODORIZER, MINT", "RS. 425","395")
-  var Ten = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-Rose_360x.jpg?v=1644862602", "HAND CREAM + SANITIZER, ROSE", "RS. 455","395")
-  var Eleven = new moviesdata("https://cdn.shopify.com/s/files/1/0361/8553/8692/products/HandCream-M_360x.jpg?v=1644916543", "FOOT CREAM + DEODORIZER, MINT", "RS. 445","385")
-  data.push(one, two, three, four, five, six, seven, eight, nine,Ten,Eleven)
-  localStorage.setItem("movies", JSON.stringify(data))
-  
-  let cartArr = JSON.parse(localStorage.getItem("cartProducts")) || [];
   data.map(function (elem) {
-  
-      let movie = document.createElement("div");
+    
+    let movie = document.createElement("div");
       movie.setAttribute("class", "movie")
   
       let img = document.createElement("img");
-      img.src = elem.imgurl;
+      img.src = elem.images[0];
       img.setAttribute("class", "image");
 
       let image=document.createElement("img");
@@ -56,21 +40,21 @@ navbarDiv.innerHTML = navbar();
       let datadiv = document.createElement("div");
       datadiv.setAttribute("class", "datadiv")
       let name = document.createElement("p");
-      name.innerText = elem.name;
+      name.innerText = elem.title;
 
 
        let cutprizediv = document.createElement("div")
       let cutprize = document.createElement("s");
-      cutprize.innerText = elem.cutprize;
+      cutprize.innerText = elem.price;
       cutprize.setAttribute("class","pcprice")
       cutprizediv.append(cutprize);
 
       let button=document.createElement("button");
-      button.innerText="ADD TO CART";
+      button.innerText="Add To Cart";
       button.addEventListener("click",() =>{
         cartArr.push(elem);
         localStorage.setItem("cartProducts",JSON.stringify(cartArr));
-        cartProducts = JSON.parse(localStorage.getItem("cartProducts"))
+        cartProducts = JSON.parse(localStorage.getItem("cartArr"))
         cartBox.innerHTML = null;
         display(cartProducts);
         total();
@@ -81,7 +65,7 @@ navbarDiv.innerHTML = navbar();
       let pdiv=document.createElement("div");
       let prize=document.createElement("p")
       pdiv.setAttribute("id","pcdiv")
-      prize.innerText="Rs." + elem.prize;
+      prize.innerText="Rs." + elem.price;
       prize.setAttribute("class","pcprice")
       pdiv.append(prize)
 
@@ -128,14 +112,14 @@ let totalPrice = createTag("h2");
 
 
    let div = createTag("div");
-data.map(({imgurl,name,prize}) =>{
+data.map((elem) =>{
   let div2 = createTag("div");
   let img = createTag("img");
-  img.src = imgurl
+  img.src = elem.images[0]
   let price = createTag("p");
-  price.innerText ="Rs." + prize;
+  price.innerText ="Rs." + elem.price;
   let itemName = createTag("h4");
-  itemName.innerText = name;
+  itemName.innerText = elem.title;
   div2.append(img,itemName,price);
   div.append(div2);
 })
@@ -151,10 +135,10 @@ total();
 function total(){
   let totalPriceTag = document.querySelector(".cartBox h2");
   let totalAmount = cartProducts.reduce((a,b) => {
-    return a + (+b.prize);
+    return a + (+b.price);
   },0);
   totalPriceTag.innerText = null;
-  totalPriceTag.innerText = totalAmount;
+  totalPriceTag.innerText = totalAmount.toFixed(2);
   console.log(totalAmount)
   console.log(totalPriceTag)
 
