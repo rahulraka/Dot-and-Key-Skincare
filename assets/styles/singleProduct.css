@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+#container {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  width: 85%;
+  margin: auto;
+}
+
+#description {
+  list-style: disc;
+  font-size: 10px;
+ 
+  font-style: italic;
+  color: #3c3c3c;
+  margin-top: 50px;
+}
+#bigimg{
+    width:80%;
+    padding-left:40px;
+}
+
+#bigimg > img {
+  width: 100%;
+  border-radius: 10px;
+  /* padding-left: 30px; */
+}
+
+li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#second {
+  margin-left: 50px;
+}
+#pec {
+  margin-left: 50px;
+  font-size: 25.999px;
+  text-decoration: line-through;
+  color: #3c3c3c;
+ 
+}
+#divpri {
+  display: flex;
+  margin-top: 10px;
+}
+#disc {
+  font-size: 25.999px;
+  color: #ff6781;
+ 
+}
+#second > div > p {
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 12px;
+}
+#perkslist {
+  font-size: 17px;
+  
+  list-style-image: url("../photos/burger-single.png");
+}
+#heartbtn {
+  display: flex;
+}
+#addToCartBtn{
+    background-color: #FF6781;border: none; width: 70%; color: white; height: 45px; font-size: 22px; margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#addToCartBtn:hover {
+    background-color: black;
+}
+#heart {
+  font-size: 40px;
+  color: #3c3c3c;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-top: 12px;
+}
+#title {
+  font-size: 30px;
+  color: #3c3c3c;
+}
+#ratings {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+#perksImg{
+    width:40%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+#perksImg> img{
+    width: 100%;
+    height:150px;
+}
+
+#pinked {
+  margin-top: 15px;
+}
+.perks-to-love {
+  background-color: #fff6f8;
+  padding: 10px 30px;
+  line-height: 0.8;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+.perks-to-love > h2 {
+  color: #fe506e;
+}
+#others{
+    width:80%;
+    /* border: 1px solid black; */
+    /* height: 500px; */
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#others>div {
+    color: #424240;
+    border-bottom: 1px solid #424240;
+    display: flex;
+    font-weight: 400;
+
+    justify-content: space-between;
+
+}
+

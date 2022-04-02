@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/77662e35e0.js" crossorigin="anonymous"></script>
+  <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@300&display=swap');
+
+    
+    
+    *{
+      text-decoration: none;
+    }
+    .style {
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      margin-bottom: 60px;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .style1 {
+      width: 27%;
+      height: 43px;
+      justify-content: center;
+      display: flex;
+      margin: auto;
+      background-color: #4267b2;
+      margin-bottom: 5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+ 
+    .style1>p {
+      margin: auto;
+      color: whitesmoke;
+    }
+
+    .style1>i {
+      color: rgb(252, 252, 252);
+      font-size: 22px;
+      padding: 10px 0px 0px 12px;
+
+    }
+
+    .style2 {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+     }
+    .style3{
+      height: 50px;
+      width: 50vh;
+      margin-bottom: 15px; 
+      border: 0.5px solid #d3cece;
+      font-size: 20px;
+      color: #535151;
+      padding: 0px 0px 0px 8px;
+      font-family: 'Ubuntu', sans-serif;
+      outline: none;
+    }
+    #form>p{
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: .2em;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .style4{
+      width: 51vh;
+      height: 48px;
+      background-color: black;
+      color: white;
+      border: 0px solid;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .style5{
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      letter-spacing: .1em;
+      font-size: 18px;
+      margin:60px 20px 0px 0px 
+    }
+    .style6{
+       
+      color: black;
+    }
+ 
+  </style>
+</head>
+
+<body>
+  <p class="style">Login</p>
+  <a href="https://www.facebook.com">
+    <div class="style1">
+      <i class="fa fa-facebook"></i>
+      <p>Facebook login</p>
+    </div>
+  </a>
+  <a href="https://www.google.com/account/about/"><div class="style1" style=" background-color:#dd4b39; margin-bottom: 20px;" >
+    <i class="fa-brands fa-google"></i>
+    <p>Google login</p>
+  </div></a>
+  <div class="style2">
+    <form id="form">
+      <p>EMAIL</p>
+      <input type="email" class="style3"  id="email">
+      <p>PASSWORD</p>
+      <input type="password"  class="style3" id="password">
+      <p></p>
+      <input type="submit" value="Sign In" class="style4">
+    </form>
+  </div>
+  <p class="style5">Don't have an account? <a class="style6" href="./signup.html">Sign up here.</a></p>
+</body>
 </html>
+<script>
+var verify2 = JSON.parse(localStorage.getItem("verify"))
+document.querySelector("#form").addEventListener("submit", FormDaTa)
+
+function FormDaTa(event) {
+    event.preventDefault();
+    var forObj = {
+        email: document.querySelector("#email").value,
+        password: document.querySelector("#password").value,
+    }
+    var email1 = forObj.email
+    var password1 = forObj.password
+    var index = verify2.findIndex(ele => {
+        return ele.email == forObj.email && ele.password == forObj.password
+    })
+    if (email1 == "" || password1 == "") {
+        alert("Fill all Fields")
+    } else if (index >= 0) {
+        alert("login success")
+        forObj.name = verify2[index].name
+        window.location = "./index.html"
+    } else {
+        alert("login fail")
+    }
+}
+</script>

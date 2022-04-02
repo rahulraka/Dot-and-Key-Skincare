@@ -1,0 +1,238 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+     font-family:sans-serif;
+}
+
+#navbar{
+    display:flex;
+    width: 90%;
+     margin: 10px auto;
+}
+#navbar i{
+    cursor: pointer;
+}
+#navbar .fa-bag-shopping{
+    position: relative;
+}
+
+.displayCart{
+    display:block;
+}
+#navbar .cartBox{
+    width:400px;
+    height:100vh;
+    background-color:#fff;
+    /* border:1px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#navbar .cartBox img{
+    width:80px;
+    margin-right: 20px;
+}
+/* #navbar .cartBox>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:300px;
+    margin: 20px auto;
+} */
+/* #navbar .cartBox>div:nth-child(1) >i{
+    cursor:pointer;
+} */
+
+#navbar .cartBox>div:nth-child(1){
+    height:400px;
+    /* border: 1px solid #000; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:100%;
+    overflow-x: scroll;
+}
+#navbar .cartBox>div:nth-child(1)::-webkit-scrollbar {
+display: none;
+}
+#navbar .cartBox>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px
+}
+
+#navbar .cartBox button{
+    width: 70%;
+    margin-left:60px;
+    margin-top:30px;
+    background-color: palevioletred;
+    border:none;
+    outline: none;
+    color: #fff;
+}
+#navbar .cartBox>div>div{
+    display:flex;
+    padding:10px;
+    align-items:center
+    
+}
+#navbar .cartBox>div>div>h4{
+    font-size:15px;
+    width:150px
+}
+
+#navbar>div:first-child,#navbar>div:nth-child(3){
+    width: 40%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    font-size:25px;
+}
+
+#navbar>div:nth-child(3){
+    justify-content:space-between;
+    padding:0px 80px
+}
+
+#navbar>div:nth-child(3)>div>input{
+    outline: none;
+    border-radius: 5px;
+    font-size:20px;
+    padding:5px;
+    border: 1px solid grey;
+}
+
+ #bar{      
+    background-color:  #42423f;
+     width: auto;
+     height: 50px;
+     display: flex;
+     margin: auto;
+     font-size: 18px;
+     font-weight: bold;
+   justify-content: center;
+     
+   }
+   #bar > div{
+       color: white;
+       width: 30%;
+       height: 100%;
+       padding: 17px;
+   }
+   #bar >div:first-child {
+       
+       font-size: 17px;
+       font-weight: bold;
+    }
+/* -------------------------------------------------------------------------------------------------------- */
+#h1{
+    width:100%;
+    border-radius: 15px;
+}
+ #productcontainer p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 450;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -5px;
+    color: #42423f;
+}
+#productcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(3,550px);
+    gap: 25px;
+    width: 80%;
+    margin: auto;
+}
+#productcontainer >div> img:first-child{
+width: 100%;
+height: 55%;
+
+}
+#productcontainer >div> img:nth-child(2) {
+    width: 100%;
+    /* border:1px solid black; */
+}
+
+
+#productcontainer >div >p{
+  
+
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#golu{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 27px;
+    border: 1px soild black;
+    z-index: 1;
+    
+}
+marquee{
+    color: white;
+}
+
+#productcontainer>div>button{
+    width: 100%;
+    background-color:palevioletred;
+    color: white;
+    border: none;
+}
+#mois{
+text-align: center;
+    font-size: 50px;
+    font-weight: 450;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    color: #42423f;
+}
+
+
+/* ----------------------------- */
+
+.pcprice{
+    font-size:12px;
+}
+
+#pcdiv > p{
+    font-size:12px;
+    margin-left: 80px;
+    color: palevioletred
+    
+}
+
+#pcdiv {
+    width: 100px;
+    height: 12px;
+    margin:auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
