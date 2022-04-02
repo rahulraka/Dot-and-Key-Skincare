@@ -43,7 +43,7 @@ function navbar(){
  
   
     <i class="fa-solid fa-bag-shopping"></i>
-    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-user" onclick="userFun()"></i>
     <div class="cartBox">
   
     
