@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bodycare Homepage</title>
+    <style>
+        div{
+            /* background-color: pink; */
+            margin: auto;
+            text-align: center;
+            /* width:200px; */
+        }
+        #container{
+            /* background-color: aqua; */
+            margin-top: 20px;
+            border-color: blueviolet;
+            padding-top: 50px;
+        }
+        #image1{
+            padding-top: 100px;
+         margin-left: 30px;
+        }
+        h1{
+          padding-top: -20%;
+            text-align: center;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+        #upper{
+            /* background-color: antiquewhite; */
+            height: 350px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+      #a{
+  /* background-color: palegreen; */
+  height: 330px;
+  width:16%;
+  margin-right: -16%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #b{
+  /* background-color: rgb(211, 152, 251); */
+  height: 330px;
+  width:16%;
+  margin-right: 13%;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #c{
+  /* background-color: rgb(251, 152, 160); */
+  height: 330px;
+  width:16%;
+  margin-left: -8%;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #a>img,#b>img,#c>img{
+          width: 100%;
+          height: 280px;
+          border-radius: 25px;
+      }
+      #a>p,b,#b,b,p,#c,p,b{
+          font-size: 20px;
+          padding-top: -8px;
+      }
+      #image2{
+            padding-top: 60px;
+         margin-left: 30px;
+        height: 400px;
+        }
+        #lower{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width:60%;
+            gap:20px;
+            padding-top: 100px;
+           justify-content: center;
+           margin: auto;
+        }
+        #faltu{
+            padding-top: 350px;
+            font-size: 30px;
+        }
+        #faltu>div{
+color: palevioletred;
+
+        }
+        #faltu>p{
+font-size: 20px;
+padding-bottom: -30p
+        }
+     iframe{
+         padding-right:0%;
+         padding-left: -400px;
+         text-align: end;
+padding-top: 80px;
+     }
+    #youtube>img{
+         width: 400px;
+         height: 600px;
+         padding-top: 80px;
+     }
+    </style>
+</head>
+<body>
+   
+    <div id="container"></div>
+   <p id="image1"> <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-SPREAD-THE-LOVE-Desktop-Final_3.png?v=1638165803"/></p>
+<p>Just In</p>
+    <h1>BODYCARE</h1>
+    <div id="upper">
+        <div id="a">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ROSE_2.png?v=1636617537"/>
+        <p>Body <b>Butter</b></p>
+        </div>
+        <div id="b">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_1.png?v=1636623319"/>
+            <p>Serum <b>Lotion</b></p>
+            </div>
+        <div id="c">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1.3_d0fb05cd-1610-4b66-ad0d-391d4aad2676.png?v=1636537323"/>
+            <p>Body <b>Scrub</b></p>
+        </div>
+       
+    </div>
+  <p id="image2"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-Model-Image-Desktop_2_1ac15045-7c83-4680-9bd8-6d5a5878a0c4.png?v=1636955347"/></p>
+  <div id="faltu">
+      <p>Body</p>
+<b>Scrub</b> 
+<div>Buff’ that Ruff’</div> </div>
+  <div id="lower"></div>
+
+ <!-- <div id="Youtube"> -->
+     <div id="youtube" style="display:flex">
+  <iframe width="1200px" height="600px" src="https://www.youtube.com/embed/YuM30jM381M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-Revised-Youtube-Desktop.png?v=1638165848"/>
+   
+</div>
+<!-- </div> -->
+</body>
+</html>
+<script>
+    let id;
+    let i=0;
+    // function start(){
+    let images=JSON.parse(localStorage.getItem("image"))
+    let container=document.getElementById("container");
+    container.innerHTML=null;
+    // let i=1;
+    let img=document.createElement("img");
+    img.src=images[i];
+    container.append(img);
+    id=setInterval(function(){
+        if(i===images.length)
+        {
+            i=0;
+        }
+        let image=images[i];
+        container.innerHTML=null;
+        let img=document.createElement("img");
+        img.src=image;
+container.append(img);
+i++;
+    },4000);
+
+</script>
+<script>
+
+let cartArray = JSON.parse(localStorage.getItem("cartArr"))||[];
+
+var skincare = JSON.parse(localStorage.getItem("skincare")) || [] ;
+console.log(skincare)
+
+let lower=document.getElementById("lower");
+display(skincare)
+function display(skincare){
+skincare.map(function(elem,index)
+{
+    var box=document.createElement("div");
+
+    // Image section
+    var img=document.createElement("img")
+    img.setAttribute("src",elem.image);
+    img.style.width="350px";
+    img.addEventListener("click",()=>{
+        // let xyz=null;
+        // xyz.push();
+        localStorage.setItem("displayData",JSON.stringify(elem))
+        console.log(elem);
+        window.location.href="./ThirdLayer.html"
+        
+    })
+
+    //  Name & Rating
+    var rating=document.createElement("div")
+    rating.setAttribute("id","rating")
+    rating.innerText="⭐"+ elem.rating;
+    
+    var span=document.createElement("span")
+    span.setAttribute("class","fa fa-star")
+    span.style.marginLeft="5px"
+   
+
+    var name=document.createElement("h3")
+    name.innerText=elem.name;
+    name.style.paddingtop="20px";
+    
+
+    var title=document.createElement("p")
+    title.innerHTML=elem.title;
+    title.style.fontSize="20px";
+    title.style.color="fade-black"
+    
+  
+
+    var price=document.createElement("span")
+    price.innerText="₹"+ +elem.price;
+    price.style.paddingtop="25px";
+    price.style.color="rgb(240, 39, 156)";
+  
+
+    var strike=document.createElement("s")
+    strike.innerText="₹"+ +elem.strike;
+    strike.style.paddingtop="25px";
+    strike.style.paddingRight="20px";
+
+    rating.append(span)
+
+    var btn=document.createElement("button")
+    btn.innerText="Add To Cart"
+    btn.style.background="rgb(240, 39, 156)"
+    btn.style.width="350px";
+    btn.style.color="white";
+    btn.style.height="30px";
+    btn.style.border="none"
+    btn.addEventListener("click",()=>{
+        cartArray.push(el);
+        localStorage.setItem("cartArr",JSON.stringify(cartArray));
+        window.location.href="#";
+    })
+
+
+    box.append(img,rating,name,title,strike,price,btn)
+  
+  document.getElementById("lower").append(box)
+
+})
+}
+
+</script>
+<script src="../Poorvi/script.js"></script>
