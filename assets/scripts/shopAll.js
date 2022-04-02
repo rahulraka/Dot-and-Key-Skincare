@@ -1,4 +1,16 @@
 // slider banner starts here...
+let cart=JSON.parse(localStorage.getItem("cartArr"))||[]
+var hideNav=document.querySelector("#dropdownC");
+function navFunc(){
+// hideNav.style.top="-10px"
+console.log("hi")
+if(hideNav.style.display==="none"){
+hideNav.style.display="flex"
+} 
+else {
+    hideNav.style.display="none"
+}
+}
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -9,31 +21,28 @@ document.querySelector(".next").addEventListener("click", function () {
   plusSlides(1);
 });
 
-// Next/previous controls
+showSlides(slideIndex);
+
 function plusSlides(n) {
-  showSlides((slideIndex += n));
+  showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
-
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";  
+  
 }
+
 
 // slider banner ends here...
 
@@ -142,6 +151,8 @@ function redirect(item) {
 }
 
 function addToCart(item) {
+  cart.push(item)
+  localStorage.setItem("cartArr",JSON.stringify(cart))
 
   console.log("added");
 }
@@ -150,6 +161,7 @@ let productData = JSON.parse(localStorage.getItem("dotAndKeyProducts"));
 console.log(productData);
 let parent = document.querySelector("#productsContent");
 appendAll(parent, productData);
+// console.log(productData);
 
 // sort and filter js starts healer
 

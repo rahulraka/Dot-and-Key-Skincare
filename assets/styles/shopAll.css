@@ -32,6 +32,12 @@ body {
   height: 475px;
   position: relative;
   margin: auto;
+  margin-top: 50px;
+  /* border: 1px solid black;
+  background-color: blue; */
+}
+.mySlides{
+  display:none;
 }
 .prev,
 .next {
@@ -58,12 +64,12 @@ body {
 }
 .fade {
   animation-name: fade;
-  animation-duration: 0.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: .4;
   }
   to {
     opacity: 1;

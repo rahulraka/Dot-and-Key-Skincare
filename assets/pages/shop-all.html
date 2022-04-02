@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+ 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
@@ -14,10 +16,13 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/shopAll.css" />
+    <link rel="stylesheet" href="/../components/main.css" />
+    <link rel="stylesheet" href="../styles/shopAll.css">
     <title>Dot & Key Skincare | Natural Skin care | Scientific Skincare</title>
+
   </head>
   <body>
+    <div id="bar"></div>
     <div id="navbar"></div>
 
     <!-- sliderBanner starts here.</> -->
@@ -74,15 +79,60 @@
         </select>
       </div>
     </div>
+    <div id="dropdownC">
+
+      <div class="conD">
+
+        <ul >
+          <li>WHAT'S NEW</li>
+          <li>TOP SUMMER PICKS</li>
+          <li>BEST SELLERS</li>
+          <li>SHOP BY INGREDIENTS</li>
+          <li>SHOP BY CONCERN</li>
+          <li><a href="#" id="shopAll">SHOP ALL PRODUCTS</a></li>
+          <li>HAIR CARE</li>
+          <li>BODY CARE</li>
+          <li>IKWI NUTRITION</li>
+          <li>KNOW US BETTER</li>
+          <li>PROFILE</li>
+          <li>LOG IN</li>
+                     </ul>
+
+
+      </div>
+      <div class="imgD"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-Burger-Menu-Vit-C.jpg?v=1647002812" alt=""></div>
+
+    </div>
+
 
     <!-- footer should be appended below to -->
 
 
-    <div id="footerSpace"></div>
+    <div id="footer"></div>
   </body>
 </html>
 <script src="../scripts/shopAll.js"></script>
 <script type="module">
   import dataRetrieve from "/../components/jsonData.js";
   dataRetrieve();
+  
+  import {navbarTop,navbar,footer} from "../../components/mainNavbar.js";
+ 
+ 
+
+  // console.log(footer)
+
+
+let bar = document.querySelector("#bar");
+bar.innerHTML = navbarTop();
+let navbarDiv = document.querySelector("#navbar");
+navbarDiv.innerHTML = navbar();
+
+console.log(navbarDiv)
+console.log(bar)
+
+  let footerdiv= document.querySelector("#footer")
+
+  footerdiv.innerHTML=footer();
 </script>
+

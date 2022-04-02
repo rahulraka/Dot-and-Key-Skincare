@@ -1,8 +1,7 @@
 var hideNav=document.querySelector("#dropdownC");
-// var category=document.querySelector("#button").addEventListener("click",hideFunc);
-
 function navFunc(){
 // hideNav.style.top="-10px"
+console.log("hii")
 if(hideNav.style.display==="none"){
 hideNav.style.display="flex"
 } 

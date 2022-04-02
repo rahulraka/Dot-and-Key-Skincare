@@ -8,6 +8,7 @@ body {
   grid-template-columns: 50% 45%;
   width: 85%;
   margin: auto;
+  margin-top:0;
 }
 
 #description {
@@ -123,6 +124,7 @@ li {
     cursor: pointer;
 }
 #others>div {
+  margin-top: 30px;;
     color: #424240;
     border-bottom: 1px solid #424240;
     display: flex;
