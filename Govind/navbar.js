@@ -118,6 +118,14 @@ let totalPrice = createTag("h2");
   let btn = createTag("button")
   btn.innerText = "Checkout";
 
+  btn.addEventListener("click",()=>{
+
+    window.location.href="../assets/pages/information.html"
+    console.log("123")
+
+
+  })
+
 
    let div = createTag("div");
 data.map(({imgurl,name,prize}) =>{
