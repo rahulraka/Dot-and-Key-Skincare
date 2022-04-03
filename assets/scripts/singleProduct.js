@@ -3,6 +3,10 @@ let obj=JSON.parse(localStorage.getItem("singleProduct"))
   let desc=document.getElementById("description");
 let perks=document.getElementById("perkslist");
 console.log(obj)
+function userFun(){
+  window.location.href = "./login.html"
+  // console.log("user")
+}
 
 
 obj.description.map((item)=>{
@@ -38,3 +42,13 @@ document.getElementById("addToCartBtn").addEventListener("click",()=>{
     localStorage.setItem("cartArr",JSON.stringify(cart))
     console.log("added");
 })
+function navFunc(){
+  // hideNav.style.top="-10px"
+  console.log("hi")
+  if(hideNav.style.display==="none"){
+  hideNav.style.display="flex"
+  } 
+  else {
+      hideNav.style.display="none"
+  }
+  }

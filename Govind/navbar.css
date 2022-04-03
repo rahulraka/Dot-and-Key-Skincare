@@ -175,8 +175,14 @@ height: 55%;
     z-index: 1;
     
 }
+.image{
+    cursor: pointer;
+}
 marquee{
     color: white;
+}
+#addToCart:hover{
+    background-color:black;
 }
 
 #productcontainer>div>button{

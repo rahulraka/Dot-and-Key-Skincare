@@ -28,10 +28,14 @@ navbarDiv.innerHTML = navbar();
     
     let movie = document.createElement("div");
       movie.setAttribute("class", "movie")
+      movie
   
       let img = document.createElement("img");
       img.src = elem.images[0];
       img.setAttribute("class", "image");
+      img.addEventListener("click", () => {
+        redirect(elem);
+      });
 
       let image=document.createElement("img");
       image.src="rating.PNG"
@@ -50,22 +54,25 @@ navbarDiv.innerHTML = navbar();
       cutprizediv.append(cutprize);
 
       let button=document.createElement("button");
+      button.id="addToCart"
       button.innerText="Add To Cart";
       button.addEventListener("click",() =>{
-        cartArr.push(elem);
-        localStorage.setItem("cartProducts",JSON.stringify(cartArr));
+        console.log(elem)
+        cartProducts.push(elem);
+        localStorage.setItem("cartArr",JSON.stringify(cartProducts));
         cartProducts = JSON.parse(localStorage.getItem("cartArr"))
         cartBox.innerHTML = null;
         display(cartProducts);
         total();
         cartBox.style.display = "block";
       })
+      
 
 
       let pdiv=document.createElement("div");
       let prize=document.createElement("p")
       pdiv.setAttribute("id","pcdiv")
-      prize.innerText="Rs." + elem.price;
+      prize.innerText="₹" + elem.price;
       prize.setAttribute("class","pcprice")
       pdiv.append(prize)
 
@@ -85,7 +92,11 @@ navbarDiv.innerHTML = navbar();
   })
 
 
-
+  function redirect(item) {
+    console.log("hii")
+    localStorage.setItem("singleProduct",JSON.stringify(item))
+    window.location.href="../assets/pages/singleProduct.html";
+  }
 
 display(cartProducts);
 function display(data){

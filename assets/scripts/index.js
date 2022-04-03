@@ -45,32 +45,6 @@ let  bestSellers = [
         price:828.06,
         btn:"ADD TO CART"
     },
-    // {
-    //     img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-12.jpg?v=1646474736",
-    //     rating:"4.7/5",
-    //     title:"RETINOL + CERAMIDE NIGHT CREAM",
-    //     strikeTh:"Rs: 945.00",
-    //     price:850.00,
-    //     btn:"ADD TO CART"
-    // },
-    // {
-    //     img:"https://www.dotandkey.com/products/lip-plumping-sleeping-mask",
-    //     rating:"4.7/5",
-    //     title:"LIP SLEEPING MASK WITH VITAMIN C",
-    //     strikeTh:"Rs: 645.00",
-    //     price:612.04,
-    //     btn:"ADD TO CART"
-    // },
-    // {
-    //   img:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_2_78dd953a-9e91-4c53-8127-68f733ff8f8c.jpg?v=1646474987",
-    //   rating:"4.8/5",
-    //   title:"VITAMIN C+E SUPER BRIGHT MOISTURIZER",
-    //   strikeTh: "Rs: 595.00",
-    //   price:565.00 ,
-    //   btn:"ADD TO CART"
-  
-    // }
-  
   ]
    
   localStorage.setItem("bestSellers",JSON.stringify(bestSellers))
