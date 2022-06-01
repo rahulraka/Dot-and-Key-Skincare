@@ -12,6 +12,15 @@ This project covers all of the functioning at dot-and-key.com, user can visit an
 
 Chrome,Chromium,Mozilla firefox, Microsoft edge can be used to access this website.
 
+### Tech Stack
+
+* #### HTML
+
+* #### CSS
+
+* #### JavaScript
+
+
 ## Help
 
 If found any bug please informing will be generous, Can right to any of the collaborators and we will try to fix it in no Time.
